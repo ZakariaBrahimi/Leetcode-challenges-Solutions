@@ -12,5 +12,5 @@ class Solution(object):
                 if RequiredVal in hashMap:
                         return [hashMap[RequiredVal], index]
                 hashMap[num] = index
-        # Here I assume that we are goint to return an empty array if we couldn find the               solution
+        # Here I assume that we are going to return an empty array if we couldn't find the solution
         return [] 
