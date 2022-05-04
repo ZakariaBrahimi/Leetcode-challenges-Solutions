@@ -82,3 +82,4 @@ but here the time complexity is going to be O(n2) which is not the optimal solut
               - Return hashMap[requiredVal], currentIndex[curItem]
            - Else:
               - hashMap[curItem] = current item indice
+- By using hash maps, the time complexity will be O(n), which is more efficient than O(n2).
