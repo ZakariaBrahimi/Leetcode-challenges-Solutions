@@ -87,4 +87,5 @@ but here the time complexity is going to be O(n2) which is not the optimal solut
 - [Two Sum - Leetcode #1 Short & Simple Solution](https://www.code-recipe.com/post/two-sum)
 - [[Python] List approach O(n²) - (2620ms) and Dictionary approach O(n) - (62ms)
 ](https://leetcode.com/problems/two-sum/discuss/1999084/Python-List-approach-O(n)-(2620ms)-and-Dictionary-approach-O(n)-(62ms))
+- [Python enumerate() method](https://www.programiz.com/python-programming/methods/built-in/enumerate)
 
