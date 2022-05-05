@@ -44,14 +44,17 @@
 
 
 #### APPROACH:
-- The **brute force solution** if using **2 nested for loops** which means two pointers, but here the time complexity is **O(n2)** which is not efficient.
+- The **brute force solution** if using **2 nested for loops** which means two pointers, but here the time complexity is **O(n2)** which is not efficient, and the space complexity is O(1)
+- The **second solution** is by **sorting the given array**, the time complexity of this is **O(nlog)** which is more efficient than O(n2) (nlogn because of the sorting operation), and the space complexity is **O(1)**.
         
-        - Initialize an empty hashMap 
+        - Initialize an empty hashSet
         - Looping through the given array.
-            - If item in hashMap
+            - If item in hashSet
                 - Return True
             - Else:
-                - Add each item of array in that hashMap like {item: 1}
+                - Add each item of array in that hashSet
         - Return False
         
-- but by using a **hashMap**, the time complexity will be decrease to **O(n)**, which is more efficient than O(n2) by using 2 nested loops.
+- but by using a **hashMap**, the time complexity will be **decrease** to **O(n)**, which is more efficient than **O(n2)** and **O(nlogn)**, but hashSet need more **memory space** which is **O(n)** (because it could takes the size of the given array) .
+#### Resources:
+- [Contains Duplicate - Leetcode 217 - Python - NeetCode](https://www.youtube.com/watch?v=3OamzN90kPg)
