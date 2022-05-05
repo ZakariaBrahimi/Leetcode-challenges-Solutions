@@ -21,3 +21,58 @@
 <p style="user-select: auto;">&nbsp;</p>
 <p style="user-select: auto;"><strong style="user-select: auto;">Follow up:</strong> What if the inputs contain Unicode characters? How would you adapt your solution to such a case?</p>
 </div>
+<hr>
+<h2>My Solution Process:</h2>
+
+#### OUTPUTS:
+        - 2 Strings t and s
+
+#### OUTPUTS:
+        - True  ===>> if t is an anagram of s
+        - False ====> if t is not an anagram of s
+
+#### RULES:
+        - s and t consist of lowercase English letters, so we don't care about letters format(lower case or upper case).
+        - Length of t and s is greater than or equal to 1 ===>>> 1 <= s.length, t.length
+        - An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using   all the original letters exactly once.
+
+#### TEST/ EDGE CASES:
+        - Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
+        - Length of t and s is 1 ===>> s=['i'], t=['i'], return True || s=['i'], t=['a'], return False
+        - Length of t and s is bigger than 1 ===>> s=['zaki'], t=['kzai'], return True || s=['zaki'], t=['zamp'], return False
+
+#### Questions to Ask:
+        - do we need to check input format!! No, let's assum that the input format is always a string format
+
+#### APPROACH: 
+
+- **First Solution**: Time complexity is **O(nlogn)** because of sorting operation with memory space **O(1)**
+
+        - If sorted(t) == sorted(s):
+            - Return True
+        - Else:
+            - Return False
+            
+- **Second Solution**: Time complexity is **O(n)** with memory space **O(n)** because of using hash Maps, So this is the **Optimal Solution**.
+        
+        - Inisializing empty 2 hashMaps ===>> t_hashMap, s_hashMap
+        - Looping trough t string
+            - If letter in t_hashMap
+                - t_hashMap[letter] += 1
+            - Else:
+                - t_hashMap[letter] = 1
+                
+        - Looping trough s string
+            - If letter in s_hashMap
+                - s_hashMap[letter] += 1
+            - Else:
+                - s_hashMap[letter] = 1
+        
+        - If s_hashMap == t_hashMap
+            - Return True
+        - Else:
+            - Return False
+
+#### Resources:
+- [Valid Anagram - Leetcode 242 - Python - NeetCode](https://www.youtube.com/watch?v=9UtInBqnCgA)
+- Javascript soring a object !!!!!!!!!!!    
