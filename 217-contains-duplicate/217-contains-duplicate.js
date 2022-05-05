@@ -3,13 +3,12 @@
  * @return {boolean}
  */
 var containsDuplicate = function(nums) {
-    hashMap = {}
+    hashSet = new Set()
     for (let i=0; i<nums.length; i++){
-        if (nums[i] in hashMap){
+        if (hashSet.has(nums[i])){
             return true
-        }else{
-            hashMap[nums[i]] = 1
         }
+        hashSet.add(nums[i])
     }
     return false
 };
