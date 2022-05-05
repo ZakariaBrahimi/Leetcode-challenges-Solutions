@@ -4,7 +4,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: bool
         """
-        hashSet = {}
+        hashSet = set()
         for num in nums:
                 if num in hashSet:
                         return True
