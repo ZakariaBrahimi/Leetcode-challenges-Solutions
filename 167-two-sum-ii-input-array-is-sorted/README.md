@@ -67,9 +67,9 @@
         - should we care about input validation ! No (I am just assuming this)
 
 #### APPROACH:
-- **First Solution**: Using 2 nested for loops, here the time complexity is O(n2), and space complexity is O(1), which is not effecience.
+- **First Solution**: Using 2 nested for loops, here the time complexity is O(n2), and space complexity is O(1), which is not efficient.
         
-- **Second Solution**: Using 2 pointers pattern, here the time complexity is O(n), and space complexity is O(1), which is not effecience.
+- **Second Solution**: Using 2 pointers pattern, here the time complexity is O(n), and space complexity is O(1), which is not efficient.
         
         -Initializing the front & back pointers with 0 and (numbers.length -1)
         - Initializing the sum variable with sum of numbers[front] and numbers[back]
