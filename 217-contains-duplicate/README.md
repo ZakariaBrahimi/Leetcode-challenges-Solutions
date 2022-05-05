@@ -59,3 +59,4 @@
 #### Resources:
 - [Contains Duplicate - Leetcode 217 - Python - NeetCode](https://www.youtube.com/watch?v=3OamzN90kPg)
 - [JavaScript hash Sets](https://www.w3schools.com/js/js_object_sets.asp)
+- [Contains Duplicate | Coding Interview Question and Answer Study Guide](https://www.youtube.com/watch?v=kbF5x_K95Jg&list=PL53JxaGwWUqA1i2fcKXTGkDi9nr0QCAaz&index=2)
