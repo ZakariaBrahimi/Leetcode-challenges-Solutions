@@ -5,6 +5,20 @@ class Solution(object):
         :type t: str
         :rtype: bool
         """
-        if sorted(t) == sorted(s):
+        t_hashMap = {}
+        s_hashMap = {}
+        for letter in s:
+                if letter in s_hashMap:
+                        s_hashMap[letter] += 1
+                else:
+                        s_hashMap[letter] = 1
+        
+        for letter in t:
+                if letter in t_hashMap:
+                        t_hashMap[letter] += 1
+                else:
+                        t_hashMap[letter] = 1
+        
+        if s_hashMap == t_hashMap:
                 return True
         return False
