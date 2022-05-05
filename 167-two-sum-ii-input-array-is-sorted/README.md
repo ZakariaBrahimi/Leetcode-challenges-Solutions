@@ -84,3 +84,4 @@
 
 #### Resources:
 - [Visual introduction Two Pointer Algorithm | Data Structure and Algorithm for Coding Interviews](https://www.youtube.com/watch?v=On03HWe2tZM)
+- [TWO SUM II - Amazon Coding Interview Question - Leetcode 167 - Python - NeetCode](https://www.youtube.com/watch?v=cQ1Oz4ckceM)
