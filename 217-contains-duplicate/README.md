@@ -58,3 +58,4 @@
 - but by using a **hashMap**, the time complexity will be **decrease** to **O(n)**, which is more efficient than **O(n2)** and **O(nlogn)**, but hashSet need more **memory space** which is **O(n)** (because it could takes the size of the given array) .
 #### Resources:
 - [Contains Duplicate - Leetcode 217 - Python - NeetCode](https://www.youtube.com/watch?v=3OamzN90kPg)
+- [JavaScript hash Sets](https://www.w3schools.com/js/js_object_sets.asp)
