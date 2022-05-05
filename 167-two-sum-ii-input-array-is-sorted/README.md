@@ -39,3 +39,48 @@
 	<li style="user-select: auto;">The tests are generated such that there is <strong style="user-select: auto;">exactly one solution</strong>.</li>
 </ul>
 </div>
+<hr>
+<h2>My Solution Process</h2>
+
+#### INPUTS:
+        - Sorted non-decreasing order array of integers numbers
+        - Targer number
+
+#### OUTPUTS:
+        - If numbers[index1] + numbers[index2] = Target ===>> return the indices of the two numbers, like this [index1, index2], so it's a 1-indexed array
+
+#### RULES:
+        - Both of two indecies are greater than 1 ===>> 1 <= index1 < index2 
+        - There is exactly one solution
+        - You may not use the same element twice
+        - Solution must use only constant extra space
+        - Length of the array shoud be greater than 1 ===>> 2 <= numbers.length
+        - Elements of the array may contains positive or negative values ===>> -1000 <= numbers[i] <= 1000
+        - Target value may be positive or negative value ===>> -1000 <= target <= 1000
+
+#### TEST/ EDGE CASES:
+        - Array of length 2 ===>> [-1,0], target = -1, return [1, 2]
+        - Array of positive elements & positive target ===>> [2,3,4], target = 6, return [1, 3]
+        - Array of negative elements & negative target ===>> [-7,-6,-2,0,3], target = -6, return [2, 4]
+
+#### Questions to Ask:
+        - should we care about input validation ! No (I am just assuming this)
+
+#### APPROACH:
+- **First Solution**: Using 2 nested for loops, here the time complexity is O(n2), and space complexity is O(1), which is not effecience.
+        
+- **Second Solution**: Using 2 pointers pattern, here the time complexity is O(n), and space complexity is O(1), which is not effecience.
+        
+        -Initializing the front & back pointers with 0 and (numbers.length -1)
+        - Initializing the sum variable with sum of numbers[front] and numbers[back]
+        - Looping through the given array, break the loop if front = back
+            - if sum == target
+                - return [front+1, back+1]
+            - Else:
+                - if sum < target
+                    - front + 1
+                - Else:
+                    - back -1
+
+#### Resources:
+- [Visual introduction Two Pointer Algorithm | Data Structure and Algorithm for Coding Interviews](https://www.youtube.com/watch?v=On03HWe2tZM)
