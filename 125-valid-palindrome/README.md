@@ -82,9 +82,11 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 - In this solution I have used **two pointers pattern**, so the time of complexity of this solution is **O(n)** with memory space **O(1)**.
 - I have written the **helper function** for **code readability**.   
 #### Resources:
+- [NOTES.md](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/blob/main/125-valid-palindrome/NOTES.md)
 - [Python String replace()](https://www.programiz.com/python-programming/methods/string/replace)
 - [How to delete a character from a string using Python - stackoverflow](https://stackoverflow.com/questions/3559559/how-to-delete-a-character-from-a-string-using-python)
 - [Valid Palindrome - Leetcode 125 - Python - NeetCode](https://www.youtube.com/watch?v=jJXJ16kPFWg)
 - [JavaScript String toLowerCase()](https://www.w3schools.com/jsref/jsref_tolowercase.asp)
 - [How to remove all the non-alphanumeric characters from a string using JavaScript? - using regex](https://melvingeorge.me/blog/remove-all-non-alphanumeric-characters-string-javascript)
+- [ASCII printable characters](https://www.ascii-code.com/)
 
