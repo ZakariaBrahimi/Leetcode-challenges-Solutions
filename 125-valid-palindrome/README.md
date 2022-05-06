@@ -33,3 +33,55 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 	<li style="user-select: auto;"><code style="user-select: auto;">s</code> consists only of printable ASCII characters.</li>
 </ul>
 </div>
+<hr>
+<h2>My Solution Process:</h2>
+
+#### INPUTS:
+        - String s
+
+#### OUTPUTS:
+        - True  ===>> if the string s is palindrome
+        - False ====>> if the string s is not palindrome
+
+#### RULES:
+        - A phrase is a palindrome if it reads the same forward and backward
+        - Converting all uppercase letters into lowercase letters
+        - Removing all non-alphanumeric characters(letters & numbers)
+        - Lenght of the string s is greater than 0 ===>> 1 <= s.length
+        - s Consists only of printable ASCII characters.
+
+#### TEST/ EDGE CASES:
+        - An empty string ===>> s = " ", return True
+        - Normale phrase ===>> s = "race a car", return False
+        - String contains both of non-alphanumeric characters & alphanumeric characters ===>> s = "A man, a plan, a canal: Panama", return True
+        - The given string contains only alphanumeric characters ===> s = "aaa a aaa aa", True
+        - The given string contains only non-alphanumeric characters ===> s = " ,; : !", return True
+
+#### Questions to Ask:
+        - Should we care about input validation! No (it's just my assumption)
+
+#### APPROACH: 
+        
+        - Removing non-alphanumeric characters & concatinate the string together & Turn it to lower case [Helper Function]
+        - new_s = helperFunc(string)
+        - Initializing front & back pointers with 0 & (new_s.length - 1)
+        - Looping through the new_s (stopt at front < back)
+            - If new_s[front] == new_s[back]
+                - front += 1 & back -= 1
+            - Else:
+                - Return False
+        - Return True
+        
+- **Helper Function:**
+
+        - Looping through the string
+            - If char is not alphanumeric
+                - string.remove(char)
+        - Return string.lowercase
+
+- The time of complexity of this solution is **O(n)** with memory space **O(1)**.
+- I have writed the **helper function** for **code readabilty**.   
+#### Resources:
+- [Python String replace()](https://www.programiz.com/python-programming/methods/string/replace)
+- [How to delete a character from a string using Python - stackoverflow](https://stackoverflow.com/questions/3559559/how-to-delete-a-character-from-a-string-using-python)
+- [Valid Palindrome - Leetcode 125 - Python - NeetCode](https://www.youtube.com/watch?v=jJXJ16kPFWg)
