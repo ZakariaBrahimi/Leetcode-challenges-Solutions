@@ -79,7 +79,7 @@ Since an empty string reads the same forward and backward, it is a palindrome.
                 - string.remove(char)
         - Return string.lowercase
 
-- The time of complexity of this solution is **O(n)** with memory space **O(1)**.
+- In this solution I have used **two pointers pattern**, so the time of complexity of this solution is **O(n)** with memory space **O(1)**.
 - I have written the **helper function** for **code readability**.   
 #### Resources:
 - [Python String replace()](https://www.programiz.com/python-programming/methods/string/replace)
