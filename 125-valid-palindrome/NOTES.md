@@ -1,1 +1,2 @@
-​
+* Here the most Interesting thing is when I am goint to build of the character is palindrome or not ===>> I have user **ord() built-in function** to check each character's **ascii code**
+* All resoiurces needed is in the readme file
