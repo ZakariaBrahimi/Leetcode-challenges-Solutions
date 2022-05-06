@@ -85,3 +85,6 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 - [Python String replace()](https://www.programiz.com/python-programming/methods/string/replace)
 - [How to delete a character from a string using Python - stackoverflow](https://stackoverflow.com/questions/3559559/how-to-delete-a-character-from-a-string-using-python)
 - [Valid Palindrome - Leetcode 125 - Python - NeetCode](https://www.youtube.com/watch?v=jJXJ16kPFWg)
+- [JavaScript String toLowerCase()](https://www.w3schools.com/jsref/jsref_tolowercase.asp)
+- [How to remove all the non-alphanumeric characters from a string using JavaScript?](https://melvingeorge.me/blog/remove-all-non-alphanumeric-characters-string-javascript)
+- []()
