@@ -1,7 +1,8 @@
 class Solution(object):
     def toValidString(self, s):
-        # "A man, a plan, a canal: Panama"
+        
         for char in s:
+            # To check if it's alphanumeric or not
                 if not (ord('A') <= ord(char) <= ord('Z') or
                     ord('a') <= ord(char) <= ord('z') or
                     ord('0') <= ord(char) <= ord('9')
