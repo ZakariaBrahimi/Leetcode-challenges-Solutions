@@ -80,7 +80,7 @@ Since an empty string reads the same forward and backward, it is a palindrome.
         - Return string.lowercase
 
 - The time of complexity of this solution is **O(n)** with memory space **O(1)**.
-- I have writed the **helper function** for **code readabilty**.   
+- I have written the **helper function** for **code readability**.   
 #### Resources:
 - [Python String replace()](https://www.programiz.com/python-programming/methods/string/replace)
 - [How to delete a character from a string using Python - stackoverflow](https://stackoverflow.com/questions/3559559/how-to-delete-a-character-from-a-string-using-python)
