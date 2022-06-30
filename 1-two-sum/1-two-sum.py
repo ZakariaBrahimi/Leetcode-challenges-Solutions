@@ -7,10 +7,9 @@ class Solution(object):
         
         """
         hashMap = {}
+        if len(nums) == 2: return [0,1]
         for index, num in enumerate(nums, start=0):
                 RequiredVal = target - num
                 if RequiredVal in hashMap:
                         return [hashMap[RequiredVal], index]
                 hashMap[num] = index
-        # Here I assume that we are going to return an empty array if we couldn't find the solution
-        return [] 
