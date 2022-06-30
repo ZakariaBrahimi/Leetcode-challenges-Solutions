@@ -60,9 +60,7 @@
 
 #### EDGE/ TEST CASES:
         - Array of length 2 ===>> [3,3] target = 6, return [0, 1]
-        - Array contains only positive integers && Target value is positive  [1,4,3,8], target = 12, return [1, 3] 
-        - Array contains only positive integers && Target value is nigative  [1,4,3,8], target = -4, return [] 
-        - Array contains only nigative integers && Target value is positive  [-21,-7,-3,-2], target = 7, return [] 
+        - Array contains only positive integers && Target value is positive  [1,4,3,8], target = 12, return [1, 3]  
         - Array contains only nigative integers && Target value is nigative  [-21,-7,-3,-2], target = -5, return [2, 3]
         - Array contains nigative and positive integers && Target value is nigative  [-21,7,-3,2], target = -14, return [0, 1]
         - Array contains nigative and positive integers && Target value is positive  [-21,7,-3,2], target = 4, return [1, 2]
