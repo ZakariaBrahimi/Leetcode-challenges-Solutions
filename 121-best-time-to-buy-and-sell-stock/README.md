@@ -49,9 +49,19 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 #### Questions to Ask:
         - Should we care about input validation! No (it's just my assumption)
 
-#### APPROACH: 
-        
-        - 
+#### APPROACH:
+	- Profit = 0
+	- First pointer is the first indice of array called left which represent the buy action
+	- Second pointer is the second indice of array called right which represent the sell action
+	- Loop through the prices array
+	  #check if is it profitable or not !!
+		- if (prices[right] - prices[Left]) < 0: #profitable
+			- Left = right 
+		- Else: #not profitable
+			- If (prices[right] - prices[Left]) > profit: # new bigger profit
+				- Profit = right - Left
+		- right = next indice
+
         
 
 
@@ -59,4 +69,4 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
  
 
 #### Resources:
-- [Best Time to Buy and Sell Stock - Leetcode 121 - Python - NeetCode](https://www.youtube.com/watch?v=1pkOgXD63yU)
+- [Sliding Window: Best Time to Buy and Sell Stock - Leetcode 121 - Python](https://www.youtube.com/watch?v=1pkOgXD63yU)
