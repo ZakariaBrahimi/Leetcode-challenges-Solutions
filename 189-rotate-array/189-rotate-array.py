@@ -16,8 +16,8 @@ class Solution(object):
         :type k: int
         :rtype: None Do not return anything, modify nums in-place instead.
         """
-        k = k % (len(nums))
-        if len(nums) == 1: return nums
+        k = k % len(nums)
+        if len(nums) == 1 or k == 0: return nums
         self.reverse(nums, 0, len(nums) - 1)
         self.reverse(nums, start=0, end=k-1)
         self.reverse(nums, start=k, end=len(nums)-1)
