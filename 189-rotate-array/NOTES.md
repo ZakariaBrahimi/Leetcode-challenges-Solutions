@@ -1,6 +1,8 @@
 we should make the operation `k%len(nums)` because of the value of **k** it could be **bigger** than the length of `nums` array
-​
+
+
 **Example:**
+
 ```
 - nums = [1,2,3,4], k = 6
 - k = k % len(nums) # k = 6%4=2 so I need to rotate the array only 2 times not 6(actual k)
