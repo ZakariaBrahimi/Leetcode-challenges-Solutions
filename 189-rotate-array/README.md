@@ -12,16 +12,7 @@ rotate 3 steps to the right: [5,6,7,1,2,3,4]
 </pre>
 
 <p style="user-select: auto;"><strong style="user-select: auto;">Example 2:</strong></p>
-
-<pre style="user-select: auto;"><strong style="user-select: auto;">Input:</strong> nums = <lclighter data-id="lgt256655983" data-bundle-id="0" style="background-image: linear-gradient(transparent 0%, transparent calc(50% - 4px), rgb(204, 242, 241) calc(50% - 4px), rgb(204, 242, 241) 100%); transition: background-position 120ms ease-in-out 0s, padding 120ms ease-in-out 0s; background-size: 100% 200%; background-position: initial; user-select: auto;">[-1,-100,3,99</lclighter><div class="LinerThreadIcon LinerFirst " data-highlight-id="256655983" data-bundle-id="0" id="lgt256655983" style="background-image: url(&quot;https://profile.getliner.com/liner-service-bucket/user_photo_default/color-2/S.svg&quot;); user-select: auto;">
-        <div class="LinerThreadIcon__dim" style="user-select: auto;"></div>
-        <div class="LinerThreadIcon__mentioned" style="user-select: auto;">
-          <div class="LinerThreadIcon__mentionedImg" style="user-select: auto;"></div>
-        </div>
-        <div class="LinerThreadIcon__onlyMe" style="user-select: auto;">
-          <div class="LinerThreadIcon__onlyMeImg" style="user-select: auto;"></div>
-        </div>
-      </div>], k = 2
+<pre style="user-select: auto;"><strong style="user-select: auto;">Input:</strong> nums = <lclighter data-id="lgt256655983" data-bundle-id="0" style="background-image: linear-gradient(transparent 0%, transparent calc(50% - 4px), rgb(204, 242, 241) calc(50% - 4px), rgb(204, 242, 241) 100%); transition: background-position 120ms ease-in-out 0s, padding 120ms ease-in-out 0s; background-size: 100% 200%; background-position: initial; user-select: auto;">[-1,-100,3,99], k = 2</lclighter><div class="LinerThreadIcon LinerFirst " data-highlight-id="256655983" data-bundle-id="0" id="lgt256655983" style="background-image: url(&quot;https://profile.getliner.com/liner-service-bucket/user_photo_default/color-2/S.svg&quot;); user-select: auto;">
 <strong style="user-select: auto;">Output:</strong> [3,99,-1,-100]
 <strong style="user-select: auto;">Explanation:</strong> 
 rotate 1 steps to the right: [99,-1,-100,3]
