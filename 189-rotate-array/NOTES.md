@@ -13,3 +13,10 @@ we should make the operation `k%len(nums)` because of the value of **k** it coul
 - 5th rotate ==>>       4,1,2,3
 - 6st rotate ==>>       3,4,1,2 ==>> and this is the result that we want to acheive
 ```
+
+### Another Solution:
+1. Create a new empty array
+2. Slice the `K` last items and insert them to the beginning of the new array
+3. Slice the items starting from index 0 to `len(nums)-k`
+
+- The problem of this approach is we need more memory space, that means the space complexety in this case is **O(n)**
