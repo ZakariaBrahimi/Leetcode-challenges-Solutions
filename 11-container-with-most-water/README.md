@@ -51,3 +51,4 @@
 - [Container With Most Water - LeetCode 11 - Python - DEEPTI TALESRA](https://www.youtube.com/watch?v=bl05vPClfpc)
 - [Container with Most Water - Leetcode 11 - Python - NeetCode](https://www.youtube.com/watch?v=UuiTKBwPgAo)	
 - [Fastest Solution and easy-to-understand and detailed video explanation](https://coderfact.com/data-structures/container-with-most-water-leetcode-11-fastest-solution/)
+- [Two-Pointer Technique: Solving Array Problems at Light Speed](https://medium.com/swlh/two-pointer-technique-solving-array-problems-at-light-speed-56a77ee83d16)
