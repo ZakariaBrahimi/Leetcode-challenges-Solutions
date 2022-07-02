@@ -29,3 +29,25 @@
 	<li style="user-select: auto;"><code style="user-select: auto;">0 &lt;= height[i] &lt;= 10<sup style="user-select: auto;">4</sup></code></li>
 </ul>
 </div>
+<br>
+<hr>
+
+### My Solution Process: Using two pointers technique
+#### APPROACH:
+
+	- Initializing left pointer with the first indice of height array and the right pointer with the last indice or height array.
+	- Initializing maxWater with zero and the width variable with (r-l)
+	- looping through the height array until the right and left oienter both meet
+		- Compare left with right pointer
+		- if left bigger than right pointer
+			- maxWater = take the max value betweet these two values: ==>> height[l]*width and the previous value of maxWater variable
+			- shift the left pointer by one (+1)
+		- if left less than right pointer
+			- maxWater = take the max value betweet these two values: ==>> height[r]*width and the previous value of maxWater variable
+			- shift the right pointer by (-1)
+	- Returning the maxWater variable
+	
+#### Ressources:
+- [Container With Most Water - LeetCode 11 - Python - DEEPTI TALESRA](https://www.youtube.com/watch?v=bl05vPClfpc)
+- [Container with Most Water - Leetcode 11 - Python - NeetCode](https://www.youtube.com/watch?v=UuiTKBwPgAo)	
+- [Fastest Solution and easy-to-understand and detailed video explanation](https://coderfact.com/data-structures/container-with-most-water-leetcode-11-fastest-solution/)
