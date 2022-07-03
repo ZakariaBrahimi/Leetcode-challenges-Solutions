@@ -1,4 +1,4 @@
-* **There is a interesting trick here, revise it later.**
+**There is a interesting trick here, revise it later.**
 * First of all,we need to sort the given array **
 * and then I **fix a target** value and then initialize the **two pointers** (in the beginning and the end indices
 * Shift those two pointers togather until both meet
@@ -10,4 +10,10 @@
 *   Increment the first pointer by 1
 *   and then check if the next item is the same asthe previous one
 *   if it is: then increament it again until we find different value
+​
+​
+**The time complexity of this approach is:**
+* We have used sorting algorithù, the time complexity of it is **O(nlogn)**
+* and We have used one for loop,  the time complexity of it is **O(n)**
+* O(n) **>** O(nlogn) ==> so the time complexity of this Solution is **O(n)**
 ​
