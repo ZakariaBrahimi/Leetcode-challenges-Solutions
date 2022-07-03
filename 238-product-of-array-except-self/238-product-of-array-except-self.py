@@ -4,21 +4,14 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        result = []
-        prefix = [1]
-        postfix = [1]
+        result = [1]
         prod = 1
         for i in range(1, len(nums)):
             prod *= nums[i-1]
-            prefix.append(prod)
+            result.append(prod)
         prod = 1
-        
-        for i in range(len(nums)-2, -1, -1):
+        for i in range(len(nums)-1, -1, -1):
+            if i == len(nums)-1:continue
             prod *= nums[i+1]
-            postfix.insert(0, prod)
-                
-        for i in range(len(nums)):
-            som = prefix[i]*postfix[i]
-            result.append(som)
+            result[i] = result[i]*prod
         return result
-        
