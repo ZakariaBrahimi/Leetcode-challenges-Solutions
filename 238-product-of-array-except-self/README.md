@@ -24,3 +24,8 @@
 <p style="user-select: auto;">&nbsp;</p>
 <p style="user-select: auto;"><strong style="user-select: auto;">Follow up:</strong>&nbsp;Can you solve the problem in <code style="user-select: auto;">O(1)&nbsp;</code>extra&nbsp;space complexity? (The output array <strong style="user-select: auto;">does not</strong> count as extra space for space complexity analysis.)</p>
 </div>
+<hr>
+
+#### Ressources:
+
+- [LeetCode 238. Product of Array Except Self (Solution Explained) - ck White youtube channel](https://www.youtube.com/watch?v=tSRFtR3pv74)
