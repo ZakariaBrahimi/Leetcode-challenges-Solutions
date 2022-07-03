@@ -1,0 +1,1 @@
+* It's pretty simple problem, but the trick here is I don't read the **examples explanation** carefully, read it again and again to solve the question correctly.
