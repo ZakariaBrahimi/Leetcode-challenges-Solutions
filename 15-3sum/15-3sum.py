@@ -5,19 +5,19 @@ class Solution(object):
         nums.sort()
         for i, a in enumerate(nums):
             if i> 0 and a == nums[i-1]: continue
-            pointer1 = i+1
-            pointer2 = len(nums)-1
-            while pointer1 < pointer2:
-                threeSum = a + nums[pointer1] + nums[pointer2]
+            start = i+1
+            end = len(nums)-1
+            while start < end:
+                threeSum = a + nums[start] + nums[end]
                 if threeSum > 0:
-                    pointer2 -= 1
+                    end -= 1
                 elif threeSum < 0:
-                    pointer1 += 1
+                    start += 1
                 else:
-                    result.append([a, nums[pointer1], nums[pointer2]])
-                    pointer1 += 1
-                    while pointer1 < pointer2 and nums[pointer1] == nums[pointer1 - 1]:
-                        pointer1 += 1
+                    result.append([a, nums[start], nums[end]])
+                    start += 1
+                    while start < end and nums[start] == nums[start - 1]:
+                        start += 1
        
         return result
                 
