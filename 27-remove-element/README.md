@@ -54,7 +54,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 </ul>
 </div>
 <hr>
-###Ressources:
 
+#### Ressources:
 - [LeetCode Remove Element Solution Explained - Java - Nick White Youtube Channel](https://www.youtube.com/watch?v=SKI8IirQZgo)
 - [Remove Element - Leetcode 27 - Python - NeetCode](https://www.youtube.com/watch?v=Pcd1ii9P9ZI)
