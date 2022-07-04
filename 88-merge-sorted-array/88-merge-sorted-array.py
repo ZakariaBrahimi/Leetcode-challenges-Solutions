@@ -1,6 +1,5 @@
 class Solution(object):
     def merge(self, nums1, m, nums2, n):
-
         p1 = m-1
         p2 = n-1
         last = m+n-1
