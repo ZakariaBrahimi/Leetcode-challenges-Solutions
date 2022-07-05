@@ -47,3 +47,5 @@ Since the largest window of s only has one 'a', return empty string.
 - [Minimum Window Substring - Airbnb Interview Question - Leetcode 76 - NeetCode](https://www.youtube.com/watch?v=jSto0O4AJbM)
 - [Minimum Window Substring: Utilizing Two Pointers & Tracking Character Mappings With A Hashtable](https://www.youtube.com/watch?v=eS6PZLjoaq8)
 - [Python Collections Module](https://www.geeksforgeeks.org/python-collections-module/)
+- [Minimum Window Substring | Sliding Window | LeetCode](https://www.youtube.com/watch?v=U1q16AFcjKs)
+- [How to Solve Sliding Window Problems - An Intro To Dynamic Programming](https://medium.com/outco/how-to-solve-sliding-window-problems-28d67601a66)
