@@ -39,3 +39,10 @@ Since the largest window of s only has one 'a', return empty string.
 
 <p style="user-select: auto;">&nbsp;</p>
 <strong style="user-select: auto;">Follow up:</strong> Could you find an algorithm that runs in <code style="user-select: auto;">O(m + n)</code> time?</div>
+
+<hr>
+
+#### Ressources: 
+
+- [Minimum Window Substring - Airbnb Interview Question - Leetcode 76 - NeetCode](https://www.youtube.com/watch?v=jSto0O4AJbM)
+- [Minimum Window Substring: Utilizing Two Pointers & Tracking Character Mappings With A Hashtable](https://www.youtube.com/watch?v=eS6PZLjoaq8)
