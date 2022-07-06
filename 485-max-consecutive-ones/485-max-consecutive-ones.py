@@ -2,8 +2,8 @@ class Solution(object):
     def findMaxConsecutiveOnes(self, nums):          
         count = 0 
         result = 0       
-        
-        for right in range(len(nums)):
+        right = 0
+        while right < len(nums):            
             if nums[right] == 0 :
                 result = max(result, count)
                 right = right + 1
@@ -14,6 +14,4 @@ class Solution(object):
             
             if right == len(nums):
                 result = max(result, count)
-                
         return result
-        
