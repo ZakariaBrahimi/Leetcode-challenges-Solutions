@@ -22,3 +22,9 @@
 	<li style="user-select: auto;"><code style="user-select: auto;">nums[i]</code> is either <code style="user-select: auto;">0</code> or <code style="user-select: auto;">1</code>.</li>
 </ul>
 </div>
+
+<hr>
+
+#### Resources:
+
+- [LeetCode Max Consecutive Ones Solution Explained - Java](https://www.youtube.com/watch?v=PLa4tYQhqoU)
