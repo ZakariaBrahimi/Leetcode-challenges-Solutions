@@ -18,7 +18,6 @@ class Solution(object):
                 result_value_has_changed = True
                 current_sum -= nums[left]
                 left += 1
-        if result_value_has_changed == False:
-            return 0
-        return result
+        
+        return result if result != sys.maxsize else 0
             
