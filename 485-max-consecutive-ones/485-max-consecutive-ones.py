@@ -12,7 +12,6 @@ class Solution(object):
                 count += 1
                 right += 1
             
-        
             if right == len(nums):
                 result = max(result, count)
                 
