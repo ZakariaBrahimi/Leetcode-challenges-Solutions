@@ -31,3 +31,9 @@
 
 <p style="user-select: auto;">&nbsp;</p>
 <strong style="user-select: auto;">Follow up:</strong> If you have figured out the <code style="user-select: auto;">O(n)</code> solution, try coding another solution of which the time complexity is <code style="user-select: auto;">O(n log(n))</code>.</div>
+<hr>
+
+#### Resources:
+
+- [JavaScript Ternary Operator](https://www.programiz.com/javascript/ternary-operator)
+- [Initializing variables with the max size of integer in javascript ](https://developer.mozilla.org/enUS/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE)
