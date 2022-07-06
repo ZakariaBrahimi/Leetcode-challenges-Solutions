@@ -5,7 +5,7 @@
  */
 var minSubArrayLen = function(target, nums) {
     let left = 0
-    let result = 1000000000
+    let result = Number.MAX_VALUE
     let current_sum = 0 
         
     for (let right=0; right<nums.length; right++){
@@ -16,5 +16,9 @@ var minSubArrayLen = function(target, nums) {
             left += 1
         }
     }
-        return (result != 1000000000) ? result  : 0
+        return (result != Number.MAX_VALUE) ? result : 0
+    /* if(result != 1000000000) return result  else 0
+    ? ==>> means if
+    : ==>> means else
+    */
 };
