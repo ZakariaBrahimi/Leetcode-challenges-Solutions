@@ -24,8 +24,8 @@ class MinStack(object):
             return self.stack[-1]
 
     def getMin(self):
-        #if not self.min_values_stack:
-        return self.min_values_stack[-1]
+        if len(self.min_values_stack) != 0:
+            return self.min_values_stack[-1]
 
 # Your MinStack object will be instantiated and called as such:
 # obj = MinStack()
