@@ -15,9 +15,7 @@ class MinStack(object):
 
     def pop(self):
         self.stack.pop()
-        self.min_values_stack.pop()
-                
-            
+        self.min_values_stack.pop()     
 
     def top(self):
         if len(self.stack) != 0:
