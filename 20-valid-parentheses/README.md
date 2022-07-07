@@ -34,3 +34,8 @@
 	<li style="user-select: auto;"><code style="user-select: auto;">s</code> consists of parentheses only <code style="user-select: auto;">'()[]{}'</code>.</li>
 </ul>
 </div>
+<hr>
+
+#### Resources:
+
+- [The Balanced Parentheses Problem - Classic Stack Problem ("Valid Parentheses" on Leetcode) - B2B SWE](https://www.youtube.com/watch?v=CCyEXcNamC4)
