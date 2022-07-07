@@ -11,7 +11,6 @@ class MinStack(object):
             self.min_values_stack.append(val)
         else:
             val = min(val, self.min_values_stack[-1])
-            #if val not in self.min_values_stack:
             self.min_values_stack.append(val)
 
     def pop(self):
