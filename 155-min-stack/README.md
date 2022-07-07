@@ -42,3 +42,9 @@ minStack.getMin(); // return -2
 	<li style="user-select: auto;">At most <code style="user-select: auto;">3 * 10<sup style="user-select: auto;">4</sup></code> calls will be made to <code style="user-select: auto;">push</code>, <code style="user-select: auto;">pop</code>, <code style="user-select: auto;">top</code>, and <code style="user-select: auto;">getMin</code>.</li>
 </ul>
 </div>
+<hr>
+
+#### Resources:
+- [Maximum and Minimum values for ints](https://stackoverflow.com/questions/7604966/maximum-and-minimum-values-for-ints)
+- [Design Min Stack - Amazon Interview Question - Leetcode 155 - Python - NeetCode](https://www.youtube.com/watch?v=qkLl7nAwDPo)
+- [LeetCode 155. Min Stack (Algorithm Explained)](https://www.youtube.com/watch?v=WxCuL3jleUA)
