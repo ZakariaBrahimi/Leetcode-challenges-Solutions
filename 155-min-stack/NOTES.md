@@ -1,1 +1,2 @@
-​
+* It's really hard when's coming to **getMin()** method by carring of time complexity (it must be **O(1)** istead **O(n)** by just just looping through out the entire stack and compar each elemnt)
+* The weired thing here is when applying **pop()** method: try it by yourself
