@@ -38,3 +38,8 @@
 
 <p style="user-select: auto;">&nbsp;</p>
 <strong style="user-select: auto;">Follow up:</strong> Could you find an <code style="user-select: auto;">O(nums1.length + nums2.length)</code> solution?</div>
+<hr>
+
+#### Recources:
+- [Next Greater Element I - Leetcode 496 - Python - Neetcode](https://www.youtube.com/watch?v=68a1Dc_qVq4)
+- [LeetCode Next Greater Element I Solution Explained - Java](https://www.youtube.com/watch?v=8BDKB2yuGyg)
