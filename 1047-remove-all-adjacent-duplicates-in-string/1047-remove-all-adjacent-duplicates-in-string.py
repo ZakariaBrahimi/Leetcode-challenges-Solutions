@@ -17,6 +17,7 @@ class Solution(object):
                 stack.pop()
                 continue
             stack.append(s[i])
-        for char in stack:
-            result += char
-        return result
+        #for char in stack:
+            #result += char
+        return ''.join(stack)
+        #return result
