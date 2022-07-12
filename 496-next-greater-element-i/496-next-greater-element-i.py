@@ -43,7 +43,7 @@ class Solution(object):
             found = False
             i += 1"""
             
-        nums1_hash_map = {value:index for index, value in enumerate(nums1) }
+        """nums1_hash_map = {value:index for index, value in enumerate(nums1) }
         result = [-1] * len(nums1)
         for i in range(len(nums2)):
             if nums2[i] in nums1_hash_map:
@@ -53,7 +53,20 @@ class Solution(object):
                         value = nums2[j]
                         result[index] = value
                         break
+        return result"""
+        stack = []
+        nums1_hash_map = {value:index for index, value in enumerate(nums1) }
+        result = [-1] * len(nums1)
+        
+        for i in range(len(nums2)):
+            current = nums2[i]
+            while stack and current > stack[-1]:
+                val = stack.pop()
+                index = nums1_hash_map[val]
+                result[index] = current
+            if current in nums1_hash_map:
+                stack.append(current)
+        
+        
         return result
-
-            
-                
+        
