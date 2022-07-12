@@ -9,5 +9,5 @@
 - Returning the stack joined togather
 ```
 ​
-* **Time Complexity:**  the length of the given string, so it's O(n)
-* **Space Complexity:**  the length of the stack used, so it's O(n)
+* **Time Complexity:**  the length of the given string, so it's **O(n)**
+* **Space Complexity:**  the length of the stack used which takes in the **worst case** the same length of the given string , so it's **O(n)**
