@@ -11,8 +11,8 @@ class Solution(object):
                 stack.pop()
         
         result = ''
-        for pair in stack:
-            result += (pair[0] * pair[1])
+        for char, count in stack:
+            result += char * count
         
         return result
         
