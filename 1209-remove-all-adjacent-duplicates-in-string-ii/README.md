@@ -35,3 +35,7 @@ Finally delete "ddd", get "aa"</pre>
 	<li style="user-select: auto;"><code style="user-select: auto;">s</code> only contains lower case English letters.</li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Remove All Adjacent Duplicates in String II - Leetcode 1209 - Python - Neetcode](https://www.youtube.com/watch?v=w6LcypDgC4w)
