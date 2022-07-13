@@ -12,7 +12,7 @@ class Solution(object):
         
         result = ''
         for pair in stack:
-            result += pair[0] * pair[1]
+            result += (pair[0] * pair[1])
         
         return result
         
