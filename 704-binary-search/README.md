@@ -27,3 +27,11 @@
 	<li style="user-select: auto;"><code style="user-select: auto;">nums</code> is sorted in ascending order.</li>
 </ul>
 </div>
+
+****
+#### Resources:
+
+- [Binary Search - Leetcode 704 - Python - Neetcode](https://www.youtube.com/watch?v=s4DPM8ct1pI)
+- [Algorithms: Binary Search](https://www.youtube.com/watch?v=P3YID7liBug)
+- [2.6.1 Binary Search Iterative Method](https://www.youtube.com/watch?v=C2apEw9pgtw)
+- [2.6.2 Binary Search Recursive Method](https://www.youtube.com/watch?v=uEUXGcc2VXM)
