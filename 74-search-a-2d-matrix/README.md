@@ -28,3 +28,11 @@
 	<li style="user-select: auto;"><code style="user-select: auto;">-10<sup style="user-select: auto;">4</sup> &lt;= matrix[i][j], target &lt;= 10<sup style="user-select: auto;">4</sup></code></li>
 </ul>
 </div>
+
+***
+#### Resources:
+- [LeetCode Search A 2D Matrix Solution Explained - Java](https://www.youtube.com/watch?v=eT0UqrYuqbg)
+- [Search in a 2D sorted array](https://www.pepcoding.com/resources/online-java-foundation/2d-arrays/search_in_a_2d_sorted_array/topic)
+- [Search A 2D Sorted Matrix - Fundamentals of Search Space Reduction - B2B SWE](https://www.youtube.com/watch?v=FOa55B9Ikfg)
+- [Binary Search in 2D Arrays](https://www.youtube.com/watch?v=enI_KyGLYPo)
+- [Search a 2D Matrix - Leetcode 74 - Python - NeetCode](https://www.youtube.com/watch?v=Ber2pi2C0j0)
