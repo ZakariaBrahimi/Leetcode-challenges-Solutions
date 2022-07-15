@@ -18,6 +18,8 @@ class Solution(object):
             else:
                 right = middle - 1
         
+        return False
+        
 
         
         
