@@ -34,3 +34,9 @@
 	<li style="user-select: auto;"><code style="user-select: auto;">1 &lt;= piles[i] &lt;= 10<sup style="user-select: auto;">9</sup></code></li>
 </ul>
 </div>
+
+***
+#### Resources:
+
+- [Koko Eating Bananas - Binary Search - Leetcode 875 - Python - Neetcode](https://www.youtube.com/watch?v=U2SozAs9RzA)
+- [Koko Eating Bananas Leetcode 875. Binary Search | Full C++ Code in Comments | Brute force to Optimal](https://www.youtube.com/watch?v=5u2hgR2QCgo)
