@@ -17,3 +17,7 @@
 	<li style="user-select: auto;"><code style="user-select: auto;">1 &lt;= num &lt;= 2^31 - 1</code></li>
 </ul>
 </div>
+
+***
+#### Resources:
+- [Valid Perfect Square - Leetcode 367 - Python - NeetCode](https://www.youtube.com/watch?v=Cg_wWPHJ2Sk&list=PLot-Xpze53leNZQd0iINpD-MAhMOMzWvO&index=3)
