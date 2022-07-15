@@ -1,1 +1,1 @@
-​
+* The main trick here is the time complexity of the brute force solution is actually pretty good which is **O(جذر تع n)**  - take a look on the attached resources with this problem on github
