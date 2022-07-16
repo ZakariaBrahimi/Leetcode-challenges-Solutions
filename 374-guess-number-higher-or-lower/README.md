@@ -41,3 +41,7 @@
 	<li style="user-select: auto;"><code style="user-select: auto;">1 &lt;= pick &lt;= n</code></li>
 </ul>
 </div>
+
+***
+#### Resources:
+- [Guess Number Higher or Lower - Leetcode 374 - Python - Neetcode](https://www.youtube.com/watch?v=xW4QsTtaCa4&list=PLot-Xpze53leNZQd0iINpD-MAhMOMzWvO&index=6)
