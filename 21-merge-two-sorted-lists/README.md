@@ -32,3 +32,8 @@
 	<li style="user-select: auto;">Both <code style="user-select: auto;">list1</code> and <code style="user-select: auto;">list2</code> are sorted in <strong style="user-select: auto;">non-decreasing</strong> order.</li>
 </ul>
 </div>
+
+***
+#### Resources:
+- [Merge Two Sorted Lists - Leetcode 21 - Python - NeetCode](https://www.youtube.com/watch?v=XIdigk956u0)
+- [Merge 2 Sorted Lists - A Fundamental Merge Sort Subroutine ("Merge Two Sorted Lists" on LeetCode) - B2B SWE](https://www.youtube.com/watch?v=GfRQvf7MB3k)
