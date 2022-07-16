@@ -16,16 +16,7 @@ class Solution(object):
                 list2 = list2.next
             current = current.next
         
-        # The 2 while loops bellow is the same as this statment == current.next = i or j
-        """while list1 == None and list2 != None:
-            current.next = list2
-            current = current.next
-            list2 = list2.next
-                
-        while list2 == None and list1 != None:
-            current.next = list1
-            current = current.next
-            list1 = list1.next"""
+        # The 2 if statement bellow is the same as this statment ===>> current.next = list1 or list2
         
         if list1 == None:
             current.next = list2
