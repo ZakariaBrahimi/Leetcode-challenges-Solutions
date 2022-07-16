@@ -1,18 +1,7 @@
 class Solution(object):
-    def searchInsert(self, nums, target):
-        """
-        
-        
-        if nums[middle] >= target:
-            return middle
-        else:
-            left = middle + 1
-        """
-        
+    def searchInsert(self, nums, target):        
         left = 0
         right = len(nums) - 1
-        result = sys.maxsize
-        index = 0
         
         while left <= right:
             middle = (left+right)/2
@@ -23,8 +12,4 @@ class Solution(object):
             else:
                 right = middle - 1
                
-                
-        
-        
         return left
-    
