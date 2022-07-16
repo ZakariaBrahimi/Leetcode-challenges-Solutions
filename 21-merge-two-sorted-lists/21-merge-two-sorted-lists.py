@@ -5,7 +5,7 @@
 #         self.next = next
 class Solution(object):
     def mergeTwoLists(self, list1, list2):
-        new_list_head = current = ListNode() # 0 -> None
+        new_list_head = current = ListNode() # 0 -> None  // dummy head
         
         while (list1 != None and list2 != None):            
             if list1.val < list2.val:
@@ -16,7 +16,7 @@ class Solution(object):
                 list2 = list2.next
             current = current.next
         
-        # The 2 if statement bellow is the same as this statment ===>> current.next = list1 or list2
+        # The 2 if statements bellow is the same as this statment ===>> current.next = list1 or list2
         
         if list1 == None:
             current.next = list2
