@@ -1,0 +1,30 @@
+class Solution(object):
+    def searchInsert(self, nums, target):
+        """
+        
+        
+        if nums[middle] >= target:
+            return middle
+        else:
+            left = middle + 1
+        """
+        
+        left = 0
+        right = len(nums) - 1
+        result = sys.maxsize
+        index = 0
+        
+        while left <= right:
+            middle = (left+right)/2
+            if nums[middle] == target:
+                return middle
+            elif nums[middle] < target:
+                left = middle + 1
+            else:
+                right = middle - 1
+               
+                
+        
+        
+        return left
+    
