@@ -26,15 +26,15 @@ class Solution(object):
                 current = current.next
                 j = j.next
             
-            """while i == None and j != None:
-                current.next = j
-                current = current.next
-                j = j.next
+        while i == None and j != None:
+            current.next = j
+            current = current.next
+            j = j.next
                 
-            while j == None and i != None:
-                current.next = i
-                current = current.next
-                i = i.next"""
-        current.next = i or j
+        while j == None and i != None:
+            current.next = i
+            current = current.next
+            i = i.next
+        #current.next = i or j
                 
         return result_list.next
