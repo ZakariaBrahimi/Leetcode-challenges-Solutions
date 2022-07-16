@@ -10,22 +10,16 @@ class Solution(object):
         j = list2
         #current = result_list
         
-        while (i != None and j != None):
-            """if i.val == j.val:
-                result_list = i
-                result_list.next = j
-                i = i.next
-                j = j.next
-                current = result_list.next"""
+        while (i != None and j != None):            
             if i.val < j.val:
                 current.next = i
-                current = current.next
                 i = i.next
             else:
                 current.next = j
-                current = current.next
                 j = j.next
-            
+            current = current.next
+        
+        # The 2 while loops bellow is the same as this statment == current.next = i or j
         while i == None and j != None:
             current.next = j
             current = current.next
@@ -35,6 +29,5 @@ class Solution(object):
             current.next = i
             current = current.next
             i = i.next
-        #current.next = i or j
-                
+            
         return result_list.next
