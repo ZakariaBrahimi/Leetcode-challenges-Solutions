@@ -5,7 +5,37 @@
 #         self.next = next
 class Solution(object):
     def isPalindrome(self, head):
-        # Edge case: list contains only one node
+        if not head.next:
+            return True
+        
+        slow = fast = head
+        
+        while fast and fast.next :
+            slow = slow.next
+            fast = fast.next.next
+    
+        prev = None
+        while slow:
+            next_node = slow.next
+
+            slow.next = prev
+            prev = slow
+            slow = next_node
+        
+        dummy = head
+        while prev:
+            if dummy.val == prev.val:
+                dummy = dummy.next
+                prev = prev.next
+            else:
+                return False
+        
+        return True
+        
+        
+        
+        
+        """"# Edge case: list contains only one node
         if not head.next:
             return True
         
@@ -25,7 +55,7 @@ class Solution(object):
                 right -= 1
             else:
                 return False
-        return True
+        return True"""
 
         
         
