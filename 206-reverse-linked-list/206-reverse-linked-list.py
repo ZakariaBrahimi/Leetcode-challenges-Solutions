@@ -5,24 +5,7 @@
 #         self.next = next
 class Solution(object):
     def reverseList(self, head):
-        """
-        if head == None:return
-        
-        dummy = current = ListNode()
-        dummy.next = head
-        head = head.next
-        current = tail = current.next
-        
-        while head != None:
-            dummy.next = head
-            head = head.next
-            dummy.next.next = current
-            current = dummy.next
-        
-        tail.next = None
-        return dummy.next
-        """
-        
+        # in-place solution 
         if head == None or head.next == None:
             return head
         
@@ -36,7 +19,4 @@ class Solution(object):
             previous_node = current
             current = next_node
             
-
         return previous_node
-        
-        
