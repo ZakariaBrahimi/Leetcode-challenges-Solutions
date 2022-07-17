@@ -30,3 +30,10 @@
 <p style="user-select: auto;">&nbsp;</p>
 <p style="user-select: auto;"><strong style="user-select: auto;">Follow up:</strong> A linked list can be reversed either iteratively or recursively. Could you implement both?</p>
 </div>
+
+***
+#### Resources:
+- [Linked Lists for Technical Interviews - Full Course](https://www.youtube.com/watch?v=Hj_rA0dhr2I&t=1319s)
+- [LeetCode - Reverse Linked List Solution](https://www.youtube.com/watch?v=NhapasNIKuQ)
+- [Reverse Linked List - Iterative AND Recursive - Leetcode 206 - Python - NeetCode](https://www.youtube.com/watch?v=G0_I-ZF0S38)
+- [How To Reverse A Singly Linked List | The Ultimate Explanation (Iteratively & Recursively) - B2B SWE](https://www.youtube.com/watch?v=O0By4Zq0OFc&t=409s)
