@@ -1,18 +1,14 @@
 * Acaully the fisrt approach coming up to my mind is the once bellow
 * I have used **dummy technique** abd iterate through out the list one by one, then adding the iterated node to the beginning of dummy list.
-```python
-if head == None:return
-dummy = current = ListNode()
-dummy.next = head
-head = head.next
-current = tail = current.next
-while head != None:
-dummy.next = head
-head = head.next
-dummy.next.next = current
-current = dummy.next
-tail.next = None
-return dummy.next
+```py
+if not head:
+return None
+new_head = head
+if head.next:
+new_head = self.reverseList(head.next)
+head.next.next = head
+head.next = None
+return new_head
 ```
 * And the other solution is traverse the linked list and change the order of them one **in-place** by one
 ​
