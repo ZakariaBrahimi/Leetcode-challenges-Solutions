@@ -2,11 +2,11 @@
 * I have used **dummy technique** abd iterate through out the list one by one, then adding the iterated node to the beginning of dummy list.
 ```py
 if not head:
-return None
+  return None
 new_head = head
 if head.next:
-new_head = self.reverseList(head.next)
-head.next.next = head
+  new_head = self.reverseList(head.next)
+  head.next.next = head
 head.next = None
 return new_head
 ```
