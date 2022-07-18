@@ -35,27 +35,5 @@ class Solution(object):
         
         return result
     
-    # Time & Space Complexity: O(n)
-    # Where n is the length of the given list
-        
-        
-        
-        
-        # to discuss 
-        # Time Complexity: O(n) ===> Iterate over the given list
-        # Space Cmplexity: O(n) ===>> n is length of new array(length of given list)
-        """arr = list()
-        current = head
-        result = float('-inf')
-        
-        while current:
-            val = current.val
-            arr.append(val)
-            current = current.next
-        
-        for i in range(len(arr)):
-            target_index = len(arr) - 1 - i
-            twin_sum = arr[i] + arr[target_index]
-            result = max(result, twin_sum)
-            
-        return result"""
+# Time Complexity: O(n) ===> Iterate over the given list ===>>  O(n/2) + O(n/2) + O(n/2) = O(n)
+# Space Cmplexity: O(1), No need for extra memory space
