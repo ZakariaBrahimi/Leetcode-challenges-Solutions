@@ -5,8 +5,6 @@
 #         self.next = next
 class Solution(object):
     def pairSum(self, head):
-        
-        
         result = float('-inf')
         fast = slow = head
         
@@ -30,8 +28,8 @@ class Solution(object):
         
         # Comparing the two halves of list
         while (temp1 != None):
-            #twin_sum = current.val + temp1.val
-            result = max(result, (current.val + temp1.val))
+            twin_sum = current.val + temp1.val
+            result = max(result, twin_sum)
             current = current.next
             temp1 = temp1.next
         
