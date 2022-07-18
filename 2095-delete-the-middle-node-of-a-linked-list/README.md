@@ -43,3 +43,7 @@ Node 0 with value 2 is the only node remaining after removing node 1.</pre>
 	<li style="user-select: auto;"><code style="user-select: auto;">1 &lt;= Node.val &lt;= 10<sup style="user-select: auto;">5</sup></code></li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [AttributeError: 'NoneType' object has no attribute 'next' Problem](https://python-forum.io/thread-31503.html)
