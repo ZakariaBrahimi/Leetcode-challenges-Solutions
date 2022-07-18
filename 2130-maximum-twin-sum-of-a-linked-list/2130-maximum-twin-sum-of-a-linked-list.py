@@ -5,8 +5,7 @@
 #         self.next = next
 class Solution(object):
     def pairSum(self, head):
-        if not head.next.next:
-            return head.val + head.next.val
+        
         
         result = float('-inf')
         fast = slow = head
@@ -27,7 +26,6 @@ class Solution(object):
             temp1 = current
             current = temp2
             
-        
         current = head
         
         # Comparing the two halves of list
