@@ -47,3 +47,4 @@ Node 0 with value 2 is the only node remaining after removing node 1.</pre>
 ****
 #### Resources:
 - [AttributeError: 'NoneType' object has no attribute 'next' Problem](https://python-forum.io/thread-31503.html)
+- [Middle of a Linked List (LeetCode 876) | Full Solution with animations | Study Algorithms](https://www.youtube.com/watch?v=IPaMfcxQtP0)
