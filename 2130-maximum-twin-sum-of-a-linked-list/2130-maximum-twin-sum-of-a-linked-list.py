@@ -35,7 +35,8 @@ class Solution(object):
         
         return result
     
-    # Time & Space Complexity is O(n), where n is the length of the given list
+    # Time & Space Complexity: O(n)
+    # Where n is the length of the given list
         
         
         
