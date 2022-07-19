@@ -42,3 +42,10 @@ lRUCache.get(4);    // return 4
 	<li style="user-select: auto;">At most 2<code style="user-select: auto;">&nbsp;* 10<sup style="user-select: auto;">5</sup></code>&nbsp;calls will be made to <code style="user-select: auto;">get</code> and <code style="user-select: auto;">put</code>.</li>
 </ul>
 </div>
+
+
+****
+#### Resources:
+- [LRU Cache - Twitch Interview Question - Leetcode 146 - NeetCode](https://www.youtube.com/watch?v=7ABFKPK2hD4)
+- [LRU Cache](https://www.interviewcake.com/concept/java/lru-cache)
+- [Implement An LRU Cache - The LRU Cache Eviction Policy ("LRU Cache" on LeetCode)](https://www.youtube.com/watch?v=S6IfqDXWa10)
