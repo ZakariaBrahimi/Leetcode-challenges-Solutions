@@ -9,16 +9,12 @@ class Solution(object):
         result_map = {}
         
         for string in strs:
-            
             if tuple(sorted(string)) in result_map:
                 result_map[tuple(sorted(string))].append(string)
             else:
                 result_map[tuple(sorted(string))] = [string, ]
-        
-        for val in result_map.values():
-            result.append(val)
             
-        return result
+        return result_map.values()
             
         
             
