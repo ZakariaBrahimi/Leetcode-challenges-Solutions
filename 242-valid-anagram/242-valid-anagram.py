@@ -1,10 +1,6 @@
 class Solution(object):
     def isAnagram(self, s, t):
         """
-        :type s: str
-        :type t: str
-        :rtype: bool
-        """
         t_hashMap, s_hashMap = {}, {}
         if len(s) != len(t):
             return False
@@ -22,4 +18,23 @@ class Solution(object):
         
         if s_hashMap == t_hashMap:
                 return True
+        return False"""
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        s_map = collections.Counter(s)
+        t_map = collections.Counter(t)
+        
+        if s_map == t_map:
+            return True
+        
         return False
