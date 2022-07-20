@@ -22,3 +22,10 @@
 	<li style="user-select: auto;"><code style="user-select: auto;">strs[i]</code> consists of lowercase English letters.</li>
 </ul>
 </div>
+
+*****
+
+#### Resources:
+- [Group Anagrams| group anagrams leetcode python | leetCode 49 | leetcode coding challenge day 6](https://www.youtube.com/watch?v=n3V-wvCXDCs)
+- [Group Anagrams Python Solution](https://dev.to/jabermudez11/group-anagrams-python-solution-1482)
+- [Group Anagrams - Categorize Strings by Count - Leetcode 49 - NeetCode](https://www.youtube.com/watch?v=vzdNOK2oB2E)
