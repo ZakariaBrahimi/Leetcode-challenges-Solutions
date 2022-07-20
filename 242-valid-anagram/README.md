@@ -24,7 +24,7 @@
 <hr>
 <h2>My Solution Process:</h2>
 
-#### OUTPUTS:
+#### INPUTS:
         - 2 Strings t and s
 
 #### OUTPUTS:
