@@ -39,3 +39,8 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 	<li style="user-select: auto;"><code style="user-select: auto;">s</code> consists of English letters, digits, symbols and spaces.</li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Longest Substring Without Repeating Characters - Leetcode 3 - Python - NeetCode](https://www.youtube.com/watch?v=wiGpQwVHdE0)
+- [I'm getting Key error in python](https://stackoverflow.com/questions/10116518/im-getting-key-error-in-python)
