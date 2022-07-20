@@ -1,6 +1,5 @@
 class Solution(object):
     def isAnagram(self, s, t):
-        """
         t_hashMap, s_hashMap = {}, {}
         if len(s) != len(t):
             return False
@@ -18,7 +17,7 @@ class Solution(object):
         
         if s_hashMap == t_hashMap:
                 return True
-        return False"""
+        return False
         
         
         
@@ -30,7 +29,8 @@ class Solution(object):
         
         
         
-        
+        # The same approach using collection module
+        """
         s_map = collections.Counter(s)
         t_map = collections.Counter(t)
         
@@ -38,3 +38,4 @@ class Solution(object):
             return True
         
         return False
+        """
