@@ -30,3 +30,7 @@
 <p style="user-select: auto;">&nbsp;</p>
 <p style="user-select: auto;"><strong style="user-select: auto;">Follow up:</strong> Recursive solution is trivial, could you do it iteratively?</p>
 </div>
+
+****
+#### Resources:
+- [Binary Tree Preorder Traversal - LeetCode 144 Python](https://www.youtube.com/watch?v=pUSy6UZCFKw)
