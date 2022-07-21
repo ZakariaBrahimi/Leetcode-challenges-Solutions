@@ -29,3 +29,8 @@
 	<li style="user-select: auto;"><code style="user-select: auto;">-10<sup style="user-select: auto;">4</sup> &lt;= Node.val &lt;= 10<sup style="user-select: auto;">4</sup></code></li>
 </ul>
 </div>
+
+
+****
+#### Resources:
+- [Same Tree - Leetcode 100 - Python](https://www.youtube.com/watch?v=vRbbcKXCxOw)
