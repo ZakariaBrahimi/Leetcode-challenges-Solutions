@@ -26,6 +26,8 @@ class Solution(object):
         if not current:
             return []
         
-        #
+        result.append(current.val)
+        result += self.preorderTraversal(current.left)
+        result += self.preorderTraversal(current.right)
         
-        return [current.val] + self.preorderTraversal(current.left) + self.preorderTraversal(current.right)
+        return result
