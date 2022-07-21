@@ -29,3 +29,9 @@
 
 <p style="user-select: auto;">&nbsp;</p>
 <strong style="user-select: auto;">Follow up:</strong> Recursive solution is trivial, could you do it iteratively?</div>
+
+
+****
+
+#### Resources:
+- [Iterative & Recursive - Binary Tree Inorder Traversal - Leetcode 94 - Python](https://www.youtube.com/watch?v=g_S5WuasWUE)
