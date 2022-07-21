@@ -29,21 +29,3 @@ class Solution(object):
             current = current.right
             
         return result
-        
-        
-        
-        # Recursive Solution
-        # Time Complexity is: O(n), where n is the number of all Tree Nodes
-        # Space Complexity is: O(n), where n is the call stack used in recursive manner
-        
-        """
-        result = []
-        current = root
-        if not current:
-            return []
-        result += self.inorderTraversal(current.left)
-        result.append(current.val)
-        result += self.inorderTraversal(current.right)
-        return result
-        """
-            
