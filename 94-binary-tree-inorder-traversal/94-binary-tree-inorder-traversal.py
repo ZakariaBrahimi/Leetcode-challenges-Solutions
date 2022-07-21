@@ -7,8 +7,36 @@
 class Solution(object):
     def inorderTraversal(self, root):
         # IN-Order traversing
-        # lnr ===>> Left - Node - Right
+        # lnr ===>> go left - than return the node - go right
         
+        # Iterative Approach
+        # Time Complexity is: O(n)
+        # Space Complexity is: O(n), where n is the stack data sctructure used to store nodes
+        # the worst case of space complexity is when we dealing with a tree conceptually like a linked list
+        # Where we should go left and append all left nodes to the stack one by one
+        
+        
+        result = []
+        stack = []
+        current = root
+        
+        while current or stack:
+            while current:
+                stack.append(current)
+                current = current.left
+            current = stack.pop()
+            result.append(current.val)
+            current = current.right
+            
+        return result
+        
+        
+        
+        # Recursive Solution
+        # Time Complexity is: O(n), where n is the number of all Tree Nodes
+        # Space Complexity is: O(n), where n is the call stack used in recursive manner
+        
+        """
         result = []
         current = root
         if not current:
@@ -17,4 +45,5 @@ class Solution(object):
         result.append(current.val)
         result += self.inorderTraversal(current.right)
         return result
+        """
             
