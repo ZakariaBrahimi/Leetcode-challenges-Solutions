@@ -6,7 +6,7 @@ class Solution(object):
         # if I need to lose values ===>> go to the left side means: (col - 1)
         # if II need to gain values ===>> go to the bottom means: (row + 1)
         
-        # while (row < matrix.length and col < matrix[0].length)
+        # while (row < matrix.length and col >= -matrix[0].length)
         # if pointer == target: return true
         # if pointer < target: row + 1
         # if pointer > target: col - 1
@@ -18,8 +18,8 @@ class Solution(object):
         
         col = -1
         row = 0
-        # here, I have added th minus to col variable(-col), cuz of 
-        while (row < len(matrix) and col >= -len(matrix[0])): 
+        # here, I have added (-) to len(matrix[0]), cuz of (col >= -len(matrix[0]))
+        while (row < len(matrix) and col >= -len(matrix[0])):
             pointer_val = matrix[row][col]
             if pointer_val == target: 
                 return True
