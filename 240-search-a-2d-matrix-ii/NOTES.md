@@ -1,0 +1,1 @@
+* check this resources for more detials: [here](https://leetcode.com/problems/search-a-2d-matrix-ii/discuss/2333362/Python-Solution-with-multiple-helpful-resources)
