@@ -28,3 +28,9 @@
 	<li style="user-select: auto;"><code style="user-select: auto;">-10<sup style="user-select: auto;">4</sup> &lt;= target &lt;= 10<sup style="user-select: auto;">4</sup></code></li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Search in rotated sorted array - Leetcode 33 - Python](https://www.youtube.com/watch?v=U8XENwh8Oy8)
+- [Search in rotated sorted array | Leetcode #33 - very onteresting solutions](https://www.youtube.com/watch?v=oTfPJKGEHcc)
+- [Search Element In a Rotated Sorted Array | Leetcode](https://www.youtube.com/watch?v=r3pMQ8-Ad5s)
