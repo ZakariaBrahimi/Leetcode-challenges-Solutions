@@ -7,6 +7,7 @@
 class Solution(object):
     def maxDepth(self, root):
         # Iterative Approach
+        # Using PRE-Order Tree Traversing
         # Time Copmlexity: O(n), where n is the height of the tree
         # Space Com:plexity: O(n), the worst case is storing all tree nodes on the stack
         
@@ -20,7 +21,6 @@ class Solution(object):
             while current:
                 stack.append(current)
                 current = current.left
-                
             temp = stack[-1]
             if temp.right:
                 current = temp.right
