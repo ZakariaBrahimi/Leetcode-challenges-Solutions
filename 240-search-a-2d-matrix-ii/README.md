@@ -31,3 +31,8 @@
 	<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>
 </ul>
 </div>
+
+***
+#### Resources:
+- [Search a 2-D Matrix - All solutions](https://afteracademy.com/blog/search-in-a-2d-matrix)
+- [Search A 2D Sorted Matrix - Fundamentals of Search Space Reduction](https://www.youtube.com/watch?v=FOa55B9Ikfg)
