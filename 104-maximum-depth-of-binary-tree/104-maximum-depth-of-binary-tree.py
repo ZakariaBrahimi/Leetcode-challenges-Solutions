@@ -6,6 +6,10 @@
 #         self.right = right
 class Solution(object):
     def maxDepth(self, root):
+        # Iterative Approach
+        # Time Copmlexity: O(n), where n is the height of the tree
+        # Space Com:plexity: O(n), the worst case is storing all tree nodes on the stack
+        
         if root == None:
             return 0
         result = -1
@@ -27,33 +31,13 @@ class Solution(object):
                     temp = stack.pop()
         
         return result
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        """if not root:
+    
+        # Recursive Approach
+        # Time Copmlexity: O(n), where n is the height of the tree
+        # Space Com:plexity: O(n), we need extra space for the call stack
+        """
+        if not root:
             return 0
         
-        return 1 + min(self.maxDepth(root.left), self.maxDepth(root.right)) """
+        return 1 + min(self.maxDepth(root.left), self.maxDepth(root.right)) 
+        """
