@@ -16,13 +16,14 @@ class Solution(object):
             while current:
                 stack.append(current)
                 current = current.left
+                
             temp = stack[-1]
             if temp.right:
                 current = temp.right
             else:
                 result = max(result, len(stack))
                 temp = stack.pop()
-                while stack and stack[-1].right == temp:
+                while stack and stack[-1].right == temp and not current:
                     temp = stack.pop()
         
         return result
