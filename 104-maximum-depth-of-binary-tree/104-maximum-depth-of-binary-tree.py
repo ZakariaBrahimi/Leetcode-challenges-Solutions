@@ -8,11 +8,24 @@ class Solution(object):
     def maxDepth(self, root):
         if root == None:
             return 0
+        result = -1
+        stack = []
+        current = root
         
-        left = self.maxDepth(root.left)
-        right = self.maxDepth(root.right)
+        while stack or current:
+            while current:
+                stack.append(current)
+                current = current.left
+            temp = stack[-1]
+            if temp.right:
+                current = temp.right
+            else:
+                result = max(result, len(stack))
+                temp = stack.pop()
+                while stack and stack[-1].right == temp:
+                    temp = stack.pop()
         
-        return 1 + max(left, right)
+        return result
         
         
         
