@@ -23,3 +23,8 @@
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
 </div>
+
+***
+#### Resources:
+- [Maximum Depth of Binary Tree - LeetCode 104 - Python](https://www.youtube.com/watch?v=Y0m0v3P1UOw)
+- [Maximum Depth of Binary Tree - 3 Solutions - Leetcode 104 - Python](https://www.youtube.com/watch?v=hTM3phVI6YQ&t=331s)
