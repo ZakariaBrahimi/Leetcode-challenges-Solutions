@@ -27,3 +27,7 @@
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
 </div>
+
+***
+#### Resources:
+- [Invert Binary Tree JavaScript Leetcode | Iterative and Recursive](https://www.youtube.com/watch?v=589pNBMX3dI)
