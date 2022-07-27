@@ -6,6 +6,9 @@
 #         self.right = right
 class Solution(object):
     def maxDepth(self, root):
+        """
+class Solution(object):
+    def maxDepth(self, root):
         # Iterative Approach
         # Using PRE-Order Tree Traversing
         # Time Copmlexity: O(n), where n is the height of the tree
@@ -39,5 +42,5 @@ class Solution(object):
         if not root:
             return 0
         
-        return 1 + min(self.maxDepth(root.left), self.maxDepth(root.right)) 
-        """
+        return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right)) 
+        
