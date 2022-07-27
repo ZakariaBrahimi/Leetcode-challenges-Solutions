@@ -4,9 +4,7 @@
 #         self.val = val
 #         self.left = left
 #         self.right = right
-class Solution(object):
-    def maxDepth(self, root):
-        """
+
 class Solution(object):
     def maxDepth(self, root):
         # Iterative Approach
@@ -43,4 +41,4 @@ class Solution(object):
             return 0
         
         return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right)) 
-        
+        """
