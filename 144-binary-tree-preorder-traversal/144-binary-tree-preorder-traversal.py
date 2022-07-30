@@ -6,7 +6,17 @@
 #         self.right = right
 class Solution(object):
     def preorderTraversal(self, root):
+        
         result = []
+        current = root
+        if not current:
+            return []
+        
+        result.append(current.val)
+        result += self.preorderTraversal(current.left)
+        result += self.preorderTraversal(current.right)
+        return result
+        """  result = []
         current = root
         stack = []
         
@@ -19,9 +29,10 @@ class Solution(object):
                 current = stack.pop()
                 current = current.right
         return result
+        """
         
-        
-        """result = []
+        """
+        result = []
         stack = []
         current = root
         
@@ -33,4 +44,5 @@ class Solution(object):
             current = stack.pop()
             current = current.right
             
-        return result"""
+        return result
+        """
