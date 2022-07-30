@@ -28,3 +28,7 @@
 	<li><code>0 &lt;= k &lt;= 10<sup>5</sup></code></li>
 </ul>
 </div>
+
+***
+#### Resources:
+- [219 Contains Duplicate II](https://cheonhyangzhang.gitbooks.io/leetcode-solutions/content/219-contains-duplicate-ii-medium.html)
