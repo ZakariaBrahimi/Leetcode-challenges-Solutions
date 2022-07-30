@@ -15,7 +15,23 @@ class Solution(object):
         # the worst case of space complexity is when we dealing with a tree conceptually like a linked list
         # Where we should go left and append all left nodes to the stack one by one
         
+        result = []
+        stack = []
+        current = root
         
+        while current or stack:
+            if current:
+                stack.append(current)
+                current = current.left
+            else:
+                current = stack.pop()
+                result.append(current.val)
+                current = current.right
+        
+        return result
+        
+        
+        """
         result = []
         stack = []
         current = root
@@ -29,3 +45,4 @@ class Solution(object):
             current = current.right
             
         return result
+        """
