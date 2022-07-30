@@ -6,12 +6,12 @@
 #         self.right = right
 class Solution(object):
     def hasPathSum(self, root, targetSum):
-        """if not root:
+        if not root:
             return False
         
         current = root
         result = 0
-        stack = [1,]
+        stack = []
         
         while stack or current:
             while current:
@@ -26,14 +26,15 @@ class Solution(object):
                     return True
                 temp = stack.pop()
                 result -= temp.val
-                while temp or stack or stack[-1].right == temp:
+                while stack and stack[-1].right == temp:
                     temp = stack.pop()
                     result -= temp.val
         
-        return False"""
+        return False
+
         
-        
-        
+        # Recursive Approach
+        """
         current_sum = 0
         def dfs(root, current_sum):
             current = root
@@ -46,41 +47,23 @@ class Solution(object):
             return (dfs(current.left, current_sum) or
             dfs(current.right, current_sum)
             )
-        return dfs(root, current_sum)
+        return dfs(root, current_sum)"""
         
-        """
-        def hasPathSum(self, node, s):
-        if not node: return False
-        ans = 0
-        subSum = s - node.val
- 
-        # If we reach a leaf node and sum becomes 0, then
-        # return True
-        if(subSum == 0 and node.left == None and node.right == None):
-            return True
- 
-        # Otherwise check both subtrees
-        if node.left is not None:
-            ans = ans or self.hasPathSum(node.left, subSum)
-        if node.right is not None:
-            ans = ans or self.hasPathSum(node.right, subSum)
- 
-        return ans
-        """
+      
         
         
         
         
-        """current = root
+        current = root
         result = 0
         
-        if not current: return 0
-        if result == targetSum:
+        if not current: return False
+        if result == targetSum and not current.left and not current.right:
             return True
         else:
             result += current.val
             self.hasPathSum(current.left, targetSum)
             self.hasPathSum(current.right, targetSum)
         
-        return result"""
+        return False      
         
