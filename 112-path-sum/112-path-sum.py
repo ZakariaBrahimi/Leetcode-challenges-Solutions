@@ -6,6 +6,7 @@
 #         self.right = right
 class Solution(object):
     def hasPathSum(self, root, targetSum):
+        # Iterative Approach
         if not root:
             return False
         
@@ -47,23 +48,9 @@ class Solution(object):
             return (dfs(current.left, current_sum) or
             dfs(current.right, current_sum)
             )
-        return dfs(root, current_sum)"""
+        return dfs(root, current_sum)
+        """
         
       
-        
-        
-        
-        
-        current = root
-        result = 0
-        
-        if not current: return False
-        if result == targetSum and not current.left and not current.right:
-            return True
-        else:
-            result += current.val
-            self.hasPathSum(current.left, targetSum)
-            self.hasPathSum(current.right, targetSum)
-        
-        return False      
+         
         
