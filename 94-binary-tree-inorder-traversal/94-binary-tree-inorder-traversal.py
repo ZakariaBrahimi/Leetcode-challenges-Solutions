@@ -14,7 +14,17 @@ class Solution(object):
         # Space Complexity is: O(n), where n is the stack data sctructure used to store nodes
         # the worst case of space complexity is when we dealing with a tree conceptually like a linked list
         # Where we should go left and append all left nodes to the stack one by one
+    
+        result = []
+        current = root
+        if not current:
+            return []
         
+        result += self.inorderTraversal(current.left)
+        result.append(current.val)
+        result += self.inorderTraversal(current.right)
+        return result
+        """ 
         result = []
         stack = []
         current = root
@@ -29,7 +39,7 @@ class Solution(object):
                 current = current.right
         
         return result
-        
+        """
         
         """
         result = []
