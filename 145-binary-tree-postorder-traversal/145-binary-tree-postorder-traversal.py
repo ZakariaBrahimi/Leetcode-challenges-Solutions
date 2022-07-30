@@ -19,6 +19,21 @@ class Solution(object):
         # + And check if the last poped item from the stack actually the right node for the last item in the stack
         # if it is, pop(cur we have finishied the right subtree), otherwise, go right
         
+        result = list()
+        current = root
+        if current == None:
+            return
+        if current.left:
+            result += self.postorderTraversal(current.left)
+        if current.right:
+            result += self.postorderTraversal(current.right)
+        
+        result.append(current.val)
+        
+        return result
+        
+        
+        """
         result = []
         stack = []
         current = root
@@ -39,6 +54,7 @@ class Solution(object):
                         result.append(temp.val)
                     
         return result 
+        """
         
         """
         result = []
