@@ -22,16 +22,26 @@ class Solution(object):
         result = list()
         current = root
         if current == None:
+            return []
+        # return self.postorderTraversal(current.left) + self.postorderTraversal(current.right) + [current.val]
+        result += self.postorderTraversal(current.left)
+        result += self.postorderTraversal(current.right)
+        result.append(current.val)
+        return result
+        
+        """
+        result = list()
+        current = root
+        if current == None:
             return
+
         if current.left:
             result += self.postorderTraversal(current.left)
         if current.right:
             result += self.postorderTraversal(current.right)
-        
         result.append(current.val)
-        
         return result
-        
+        """
         
         """
         result = []
