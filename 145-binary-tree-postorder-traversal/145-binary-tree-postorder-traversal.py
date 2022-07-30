@@ -24,6 +24,28 @@ class Solution(object):
         current = root
         
         while(current or stack):
+            if current:
+                stack.append(current)
+                current = current.left
+            else:
+                temp = stack[-1]
+                if temp.right != None:
+                    current = temp.right
+                else:
+                    result.append(temp.val)
+                    temp = stack.pop()
+                    while stack and temp == stack[-1].right:
+                        temp = stack.pop()
+                        result.append(temp.val)
+                    
+        return result 
+        
+        """
+        result = []
+        stack = []
+        current = root
+        
+        while(current or stack):
             while current != None:
                 stack.append(current)
                 current = current.left
@@ -38,3 +60,4 @@ class Solution(object):
                     result.append(temp.val)
                     
         return result 
+    """
