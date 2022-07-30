@@ -7,6 +7,21 @@
 class Solution(object):
     def preorderTraversal(self, root):
         result = []
+        current = root
+        stack = []
+        
+        while stack or current:
+            if current:
+                result.append(current.val)
+                stack.append(current)
+                current = current.left
+            else:
+                current = stack.pop()
+                current = current.right
+        return result
+        
+        
+        """result = []
         stack = []
         current = root
         
@@ -18,4 +33,4 @@ class Solution(object):
             current = stack.pop()
             current = current.right
             
-        return result
+        return result"""
