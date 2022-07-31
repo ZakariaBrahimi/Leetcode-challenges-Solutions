@@ -33,3 +33,9 @@
 	<li><code>-10<sup>4</sup> &lt;= Node.val &lt;= 10<sup>4</sup></code></li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Balanced Binary Tree - Leetcode 110 - Python](https://www.youtube.com/watch?v=QfJsau0ItOY)
+- [Test If A Binary Tree Is Height Balanced ("Balanced Binary Tree" on LeetCode)](https://www.youtube.com/watch?v=LU4fGD-fgJQ)
+- [Balanced Binary Tree | LeetCode 110 | Coding Interview Tutorial](https://www.youtube.com/watch?v=_pP1UaL-Xi8)
