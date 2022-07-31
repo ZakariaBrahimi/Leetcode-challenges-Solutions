@@ -18,12 +18,11 @@ class Solution(object):
                 current = queue.pop()
                 if current:
                     level.append(current.val)
-                    #if current.left:
-                    queue.insert(0, current.left)
-                    #if current.right:
-                    queue.insert(0, current.right)
-            if level:
-                result.append(level)
+                    if current.left:
+                        queue.insert(0, current.left)
+                    if current.right:
+                        queue.insert(0, current.right)
+            result.append(level)
         
         return result
                 
