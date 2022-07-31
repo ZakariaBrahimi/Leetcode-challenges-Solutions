@@ -1,1 +1,2 @@
-​
+#### Depth-First Search
+* it's a worked solution but it's not efficient, because we are searching for a **leaf node** that is **nearest to the root**, this is why we have used **Breadth-First Search** rather than **Depth-First Search** Algorithm
