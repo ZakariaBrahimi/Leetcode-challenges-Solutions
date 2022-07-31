@@ -10,12 +10,12 @@ class Solution(object):
             if not root:
                 return [True, 0]
         
-            left_height  = dfs(root.left)
-            right_height = dfs(root.right)
-            is_balanced   = (left_height[0] and right_height[0] and
-                             abs(left_height[1] - right_height[1]) <= 1)
+            left  = dfs(root.left)
+            right = dfs(root.right)
+            is_balanced  = (left[0] and right[0] and
+                            abs(left[1] - right[1]) <= 1)
         
-            return [is_balanced, max(left_height[1], right_height[1]) + 1]
+            return [is_balanced, max(left[1], right[1]) + 1]
         
         return dfs(root)[0]
     
