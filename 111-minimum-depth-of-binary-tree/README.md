@@ -25,3 +25,7 @@
 	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Which Python Conditional Return Statement Is The Most Pythonic?](https://stackoverflow.com/questions/26725284/which-python-conditional-return-statement-is-the-most-pythonic)
