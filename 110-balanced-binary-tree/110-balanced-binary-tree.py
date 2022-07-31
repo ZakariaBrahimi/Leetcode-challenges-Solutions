@@ -19,6 +19,4 @@ class Solution(object):
         
         return dfs(root)[0]
     
-    
-            
            
