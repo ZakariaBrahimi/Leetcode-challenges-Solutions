@@ -1,1 +1,1 @@
-​
+* Take a look to javascript code, there is another simple approach to solve this problem
