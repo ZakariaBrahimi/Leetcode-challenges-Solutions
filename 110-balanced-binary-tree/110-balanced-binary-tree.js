@@ -15,16 +15,14 @@ var isBalanced = function(root) {
     
     return getHeight(root) !== -1
 };
-
 var getHeight = (root) =>{
     if (root === null) return 0
     
-    let left = getHeight(root.left)
+    let left  = getHeight(root.left)
     let right = getHeight(root.right)
     
     if (left === -1 || right === -1 || Math.abs(left-right) > 1){
         return -1
     }
-    
     return Math.max(left, right) + 1
 }
