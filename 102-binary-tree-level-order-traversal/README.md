@@ -27,3 +27,8 @@
 	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Binary Tree Level Order Traversal - BFS - Leetcode 102](https://www.youtube.com/watch?v=6ZnyEApgFYg)
+- [JavaScript Array shift()](https://www.w3schools.com/jsref/jsref_shift.asp)
