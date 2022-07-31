@@ -9,12 +9,12 @@ class Solution(object):
         # Breadth-First Search Algorithm
         if not root: return 0
         queue = [root]
-        min_depth = 1
+        min_depth = 1 # root level
         
         while queue:
             for i in range(len(queue)):
                 current = queue.pop()
-                if not current.left and not current.right:
+                if not current.left and not current.right: # a leaf node
                     return min_depth
                 if current:
                     if current.left:
