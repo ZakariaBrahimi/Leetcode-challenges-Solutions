@@ -1,30 +1,39 @@
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
-class Solution(object):
-    def levelOrder(self, root):
-        if not root: return []
-        queue = [root]
-        result = []
-        level = []
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {number[][]}
+ */
+var levelOrder = function(root) {
+    if (root === null) return []
+        let queue = [root]
+        let result = []
         
-        while queue:
-            level = []
-            
-            for i in range(len(queue)):
-                current = queue.pop()
-                if current:
-                    level.append(current.val)
-                    if current.left:
-                        queue.insert(0, current.left)
-                    if current.right:
-                        queue.insert(0, current.right)
-            result.append(level)
         
+        while (queue.length > 0){
+            let level = []
+            const queueLength = queue.length
+            for(i=0; i<queueLength; i++){
+                let current = queue.shift()
+                if (current != null){
+                    level.push(current.val)
+                    if (current.left != null){
+                        queue.push(current.left)
+                    }
+                        
+                    if (current.right != null){
+                        queue.push(current.right)
+                    }
+                        
+                }
+            }
+            result.push(level)
+        }                    
         return result
-                
-                
-        
+};
