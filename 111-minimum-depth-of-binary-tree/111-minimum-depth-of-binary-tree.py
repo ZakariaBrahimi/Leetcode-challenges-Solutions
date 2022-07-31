@@ -6,7 +6,7 @@
 #         self.right = right
 class Solution(object):
     def minDepth(self, root):
-        # Breadth-First Search
+        # Breadth-First Search Algorithm
         if not root: return 0
         queue = [root]
         min_depth = 1
@@ -25,6 +25,9 @@ class Solution(object):
         
         
         # Depth-First Search
+        # it's a worked solution but it's not efficient
+        # because we are searching for a leaf node that is nearest to the root, 
+        # this is why we have used Breadth-First Search rather than Depth-First Search Algorithm
         """  
         if not root: return 0
         left = self.minDepth(root.left)
