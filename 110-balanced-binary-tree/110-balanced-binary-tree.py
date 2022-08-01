@@ -17,6 +17,7 @@ class Solution(object):
         
             return [is_balanced, max(left[1], right[1]) + 1]
         
+        
         return dfs(root)[0]
     
            
