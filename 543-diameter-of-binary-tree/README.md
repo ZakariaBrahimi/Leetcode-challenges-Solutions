@@ -26,3 +26,9 @@
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Diameter of a Binary Tree - Leetcode 543 - Python](https://www.youtube.com/watch?v=bkxqA8Rfv04)
+- [LEETCODE 543 (JAVASCRIPT) | DIAMETER OF BINARY TREE](https://www.youtube.com/watch?v=ib_JPaMEUhw)
+- [Python Tutorial: Variable Scope - Understanding the LEGB rule and global/nonlocal statements](https://www.youtube.com/watch?v=QVdf0LgmICw)
