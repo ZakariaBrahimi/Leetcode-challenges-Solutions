@@ -6,7 +6,6 @@
 #         self.right = right
 class Solution(object):
     def diameterOfBinaryTree(self, root):
-        longest_diameter = 0
         def dfs(root):
             if not root:
                 return [0, 0] # [hight, diameter]
@@ -17,5 +16,3 @@ class Solution(object):
         
             return [1 + max(left[0], right[0]), longest_diameter]
         return dfs(root)[1]
-        
-        
