@@ -34,6 +34,7 @@
 	<li><code>p</code> and <code>q</code> will exist in the BST.</li>
 </ul>
 </div>
+
 ****
 #### Resources:
 - [Lowest Common Ancestor of a Binary Search Tree - Leetcode 235 - Python](https://www.youtube.com/watch?v=gs2LMfuOR9k)
