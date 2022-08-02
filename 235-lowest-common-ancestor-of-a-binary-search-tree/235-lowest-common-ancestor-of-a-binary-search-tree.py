@@ -11,7 +11,7 @@ class Solution(object):
         while current:
             if current.val < p.val and current.val < q.val:
                 current = current.right
-            elif current.val > p.val and current.val > q.val:
+            if current.val > p.val and current.val > q.val:
                 current = current.left
-            else:
+            if (current.val >= p.val and current.val <= q.val) or (current.val >= q.val and current.val <= p.val):
                 return current
