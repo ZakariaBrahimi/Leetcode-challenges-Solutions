@@ -7,21 +7,17 @@
 class Solution(object):
     def rightSideView(self, root):
         if not root: return []
-        result = [root.val]
+        right_side_view = [root.val]
         queue = [root]
         
         while queue:
             for i in range(len(queue)):
                 current = queue.pop()
-                #if current:
                 if current.left:
                     queue.insert(0, current.left)
                 if current.right:
                     queue.insert(0, current.right)
             if queue:
-                result.append(queue[0].val)
+                right_side_view.append(queue[0].val)
                 
-        return result
-            
-        
-        
+        return right_side_view
