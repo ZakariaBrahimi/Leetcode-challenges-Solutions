@@ -25,3 +25,8 @@
 	<li><code>-10<sup>4</sup> &lt;= subRoot.val &lt;= 10<sup>4</sup></code></li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Subtree of another tree | Same tree | leetcode 572 and leetcode 100 | Python](https://www.youtube.com/watch?v=zr4myv3rV5U&t=519s)
+- [Subtree of Another Tree - Leetcode 572 - Python](https://www.youtube.com/watch?v=E36O5SWp-LE&t=475s)
