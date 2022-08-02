@@ -32,6 +32,10 @@ Node 3 -&gt; (3,1,3) is the maximum value in the path.</pre>
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
+****
+#### Resources:
+- [Validate Binary Search Tree - Depth First Search - Leetcode 98](https://www.youtube.com/watch?v=s6ATEkipzow)
+
 <ul>
 	<li>The number of nodes in the binary tree is in the range&nbsp;<code>[1, 10^5]</code>.</li>
 	<li>Each node's value is between <code>[-10^4, 10^4]</code>.</li>
