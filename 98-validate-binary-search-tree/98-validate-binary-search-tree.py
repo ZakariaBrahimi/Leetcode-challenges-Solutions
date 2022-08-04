@@ -16,37 +16,4 @@ class Solution(object):
                 node.right, node.val, right
             )
 
-        return valid(root, float("-inf"), float("inf"))
-        
-        
-       
-        """if not root: return True
-        if root and not root.left and not root.right: return True
-        change = 5
-        def validSubTree(root):
-            if root and not root.left and root.right:
-                right = root.right
-                if change < right.val and root.val < right.val:
-                    return True
-                else:
-                    return False
-                
-            if root and root.left and not root.right:
-                left = root.left
-                if change > left.val and root.val > left.val:
-                    return True
-                else:
-                    return False
-                
-            left = root.left
-            right = root.right
-            if change < right.val and change > left.val and root.val < right.val and root.val > left.val:
-                return True
-            else:
-                return False
-
-        
-        if validSubTree(root):
-            return self.isValidBST(root.left) and self.isValidBST(root.right)
-        else:
-            return False        """
+        return valid(root, float("-inf"), float("inf"))       
