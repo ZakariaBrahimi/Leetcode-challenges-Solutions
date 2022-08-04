@@ -19,29 +19,28 @@ class Solution(object):
         return valid(root, float("-inf"), float("inf"))
         
         
-        """
-       if not root: return True
+       
+        """if not root: return True
         if root and not root.left and not root.right: return True
-        change = [root.val]
-        freeze(change)
+        change = 5
         def validSubTree(root):
             if root and not root.left and root.right:
                 right = root.right
-                if change[0] < right.val and root.val < right.val:
+                if change < right.val and root.val < right.val:
                     return True
                 else:
                     return False
                 
             if root and root.left and not root.right:
                 left = root.left
-                if change[0] > left.val and root.val > left.val:
+                if change > left.val and root.val > left.val:
                     return True
                 else:
                     return False
                 
             left = root.left
             right = root.right
-            if change[0] < right.val and change[0] > left.val and root.val < right.val and root.val > left.val:
+            if change < right.val and change > left.val and root.val < right.val and root.val > left.val:
                 return True
             else:
                 return False
