@@ -6,14 +6,14 @@
 #         self.right = right
 class Solution(object):
     def isValidBST(self, root):
-        def valid(node, min_val, max_val):
-            if not node:
+        def valid(root, min_val, max_val):
+            if not root:
                 return True
-            if not (node.val < max_val and node.val > min_val):
+            if not (root.val < max_val and root.val > min_val):
                 return False
 
-            return valid(node.left, min_val, node.val) and valid(
-                node.right, node.val, max_val
+            return valid(root.left, min_val, root.val) and valid(
+                root.right, root.val, max_val
             )
 
         return valid(root, float("-inf"), float("inf"))       
