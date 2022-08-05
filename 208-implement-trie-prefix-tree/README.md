@@ -37,3 +37,8 @@ trie.search("app");     // return True
 	<li>At most <code>3 * 10<sup>4</sup></code> calls <strong>in total</strong> will be made to <code>insert</code>, <code>search</code>, and <code>startsWith</code>.</li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Summary](https://leetcode.com/problems/implement-trie-prefix-tree/solution/)
+- [Implement Trie (Prefix Tree) - Leetcode 208](https://www.youtube.com/watch?v=oobqoCJlHA0)
