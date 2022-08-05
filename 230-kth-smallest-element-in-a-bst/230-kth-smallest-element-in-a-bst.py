@@ -8,7 +8,11 @@ class Solution(object):
     def kthSmallest(self, root, k):
 
         def inorder(root):
-            output = inorder(root.left) + [root.val] + inorder(root.right) if root else []
+            output = list()
+            if not root: return []
+            output += inorder(root.left) 
+            output.append(root.val)
+            output += inorder(root.right) 
             
           
             return output
