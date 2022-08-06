@@ -19,7 +19,7 @@ class WordDictionary:
         return self.searchFrom(self.root, word)
 
     def searchFrom(self, node, word):
-        for i in xrange(len(word)):
+        for i in range(len(word)):
             c = word[i]
             if c == '.':
                 for k in node.children:
