@@ -39,3 +39,7 @@ wordDictionary.search("b.."); // return True
 	<li>At most <code>10<sup>4</sup></code> calls will be made to <code>addWord</code> and <code>search</code>.</li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Design Add and Search Words Data Structure - Leetcode 211 - Python](https://www.youtube.com/watch?v=BTf05gs_8iU)
