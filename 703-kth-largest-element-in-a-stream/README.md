@@ -42,3 +42,5 @@ kthLargest.add(4);   // return 8
 #### Resources:
 - [Summary](https://leetcode.com/problems/kth-largest-element-in-a-stream/solution/)
 - [Kth Largest Element in a Stream - Leetcode 703 - Python](https://www.youtube.com/watch?v=hOjcdrqMoQ8)
+- [heapq — Heap queue algorithm](https://docs.python.org/3/library/heapq.html)
+- [Max Heap Datastructure](http://btechsmartclass.com/data_structures/max-heap.html)
