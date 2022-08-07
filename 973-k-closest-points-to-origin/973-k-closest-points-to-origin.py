@@ -1,6 +1,6 @@
 class Solution(object):
     def kClosest(self, points, k):
-        min_heap = [[math.sqrt(math.pow(point[0], 2) + math.pow(point[1], 2)), point] for point in points]  
+        min_heap = [[math.sqrt(point[0]**2 + point[1]**2), point] for point in points]  
         heapq.heapify(min_heap)
         result = list()
         while k != 0:
