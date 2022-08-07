@@ -37,3 +37,7 @@ we combine 1 and 1 to get 0 so the array converts to [1] then that's the value o
 	<li><code>1 &lt;= stones[i] &lt;= 1000</code></li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Last Stone Weight - Priority Queue - Leetcode 1046 - Python](https://www.youtube.com/watch?v=B-QCq79-Vfw)
