@@ -1,1 +1,1 @@
-​
+* Python doesn't support Max Heap, so that, I have multiply the array numbers by **-1** to simulate the Max Heap using python Min Heap, for more detials check [this](https://www.youtube.com/watch?v=B-QCq79-Vfw)
