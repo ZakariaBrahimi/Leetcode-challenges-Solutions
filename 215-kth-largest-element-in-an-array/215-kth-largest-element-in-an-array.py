@@ -1,17 +1,5 @@
 class Solution(object):
-    
     def findKthLargest(self, nums, k):
-        min_heap = list()
-        heapq.heapify(min_heap)
-        for num in nums:
-            heapq.heappush(min_heap, num)
-            if len(min_heap) > k:
-                heapq.heappop(min_heap)
-            
-        return min_heap[0]
-        
-    
-    """def findKthLargest(self, nums, k):
         # Quick Select Approach
         k = len(nums) - k
         def quickSelect(left, right):
@@ -30,6 +18,21 @@ class Solution(object):
    
         return quickSelect(0, len(nums) - 1)
     """
+    # This is working solution using Heap Data Structure
+    # Time Complexity: O(n*logn), where n is the length of array, re-Analys it
+    # Space Complexity: O(k)
+    def findKthLargest(self, nums, k):
+        min_heap = list()
+        heapq.heapify(min_heap)
+        for num in nums:
+            heapq.heappush(min_heap, num)
+            if len(min_heap) > k:
+                heapq.heappop(min_heap)
+            
+        return min_heap[0]
+    """
+    
+
     
     
     # This is working solution using Heap Data Structure
