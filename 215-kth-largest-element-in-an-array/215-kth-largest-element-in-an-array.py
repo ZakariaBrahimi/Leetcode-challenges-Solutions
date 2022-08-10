@@ -1,6 +1,8 @@
 class Solution(object):
     def findKthLargest(self, nums, k):
         # Quick Select Approach
+        # Time Complexity: best case: O(n) && worst case: O(n2)
+        # Space Complexity: O(1), No extra memory !
         k = len(nums) - k
         def quickSelect(left, right):
             pivot = nums[right]
@@ -17,10 +19,11 @@ class Solution(object):
             else: return quickSelect(left, pointer-1)
    
         return quickSelect(0, len(nums) - 1)
-    """
+    
     # This is working solution using Heap Data Structure
     # Time Complexity: O(n*logn), where n is the length of array, re-Analys it
     # Space Complexity: O(k)
+    """
     def findKthLargest(self, nums, k):
         min_heap = list()
         heapq.heapify(min_heap)
