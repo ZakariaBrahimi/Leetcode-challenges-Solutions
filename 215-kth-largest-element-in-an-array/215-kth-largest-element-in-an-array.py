@@ -1,6 +1,17 @@
 class Solution(object):
     
     def findKthLargest(self, nums, k):
+        min_heap = list()
+        heapq.heapify(min_heap)
+        for num in nums:
+            heapq.heappush(min_heap, num)
+            if len(min_heap) > k:
+                heapq.heappop(min_heap)
+            
+        return min_heap[0]
+        
+    
+    """def findKthLargest(self, nums, k):
         # Quick Select Approach
         k = len(nums) - k
         def quickSelect(left, right):
@@ -9,18 +20,16 @@ class Solution(object):
             
             for i in range(left, right):
                 if pivot >= nums[i]:
-                    nums[pointer], nums[i] = nums[i], nums[pointer]
+                    nums[pointer], nums[i] = nums[i], nums[pointer] # Swap them
                     pointer += 1
             
-            nums[pointer], nums[right] = pivot, nums[pointer]
+            nums[pointer], nums[right] = pivot, nums[pointer] # Swap
             if pointer == k: return nums[pointer]
             elif pointer < k: return quickSelect(pointer+1, right)
             else: return quickSelect(left, pointer-1)
-            
-            
-            
+   
         return quickSelect(0, len(nums) - 1)
-    
+    """
     
     
     # This is working solution using Heap Data Structure
