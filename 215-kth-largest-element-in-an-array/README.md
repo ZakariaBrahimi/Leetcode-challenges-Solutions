@@ -20,3 +20,7 @@
 	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Kth Largest Element in an Array - Quick Select - Leetcode 215 - Python](https://www.youtube.com/watch?v=XEmy13g1Qxc)
