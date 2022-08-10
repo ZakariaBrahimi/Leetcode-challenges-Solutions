@@ -24,3 +24,4 @@
 ****
 #### Resources:
 - [Kth Largest Element in an Array - Quick Select - Leetcode 215 - Python](https://www.youtube.com/watch?v=XEmy13g1Qxc)
+- [Find the k'th Largest or Smallest Element: From Sorting To Heaps To Partitioning](https://www.youtube.com/watch?v=hGK_5n81drs&t=1252s)
