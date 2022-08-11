@@ -1,6 +1,17 @@
 class Solution(object):
     def leastInterval(self, tasks, n):
         count = collections.Counter(tasks) # {letter:occurence}
+        freq = [val for val in count.values()]
+        max_freq = max(freq)
+        max_freq_tasks = freq.count(max_freq)
+        
+        return max(len(tasks), (max_freq - 1) * (n + 1) +  max_freq_tasks)
+        
+        
+        
+        """
+        def leastInterval(self, tasks, n):
+        count = collections.Counter(tasks) # {letter:occurence}
         max_heap = [-val for val in count.values()]
         heapq.heapify(max_heap) # [], n = 2
         time_required = 0 # 12
@@ -18,3 +29,7 @@ class Solution(object):
                 heapq.heappush(max_heap, val)
             
         return time_required
+        """
+            
+        
+        
