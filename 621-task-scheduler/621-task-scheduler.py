@@ -1,6 +1,9 @@
 class Solution(object):
     def leastInterval(self, tasks, n):
         # Solving the problem by figuring out the pattern
+        # This Approach is more optimal solution than th Max Heap && Queue Approach
+        # Time Complexity: O(n) in worst case
+        # Space Complexity: O(n)
         count = collections.Counter(tasks) # {letter:occurence}
         freq = [val for val in count.values()]
         max_freq = max(freq)
@@ -10,6 +13,8 @@ class Solution(object):
         
         
         # Max Heap && Queue Approach
+        # Time Complexity: 
+        # Space Complexity: 
         """
         def leastInterval(self, tasks, n):
             time_required = 0
