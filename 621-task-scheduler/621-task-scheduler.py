@@ -13,15 +13,8 @@ class Solution(object):
                 if current_task:
                     rest = time_required + n # 12
                     queue.insert(0, [current_task, rest])
-
             if queue and queue[-1][1] == time_required:
                 val = queue.pop()[0] # 0
                 heapq.heappush(max_heap, val)
             
-            
         return time_required
-        
-        
-            
-        
-        
