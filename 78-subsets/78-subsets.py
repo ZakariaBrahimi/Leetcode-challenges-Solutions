@@ -4,7 +4,7 @@ class Solution(object):
         subarr = []
         def dfs(index):
             if index == len(nums):
-                result.append(subarr[:])
+                result.append(list(subarr))
                 return
             
             subarr.append(nums[index])
