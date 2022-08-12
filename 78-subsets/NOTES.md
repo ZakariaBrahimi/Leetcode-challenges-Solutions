@@ -18,3 +18,6 @@ list()
 ```
 [check here](https://stackoverflow.com/questions/37059269/attributeerror-list-object-has-no-attribute-copy) to see the problem with using list.copy()
 * It iterates thorugh all elements. So the time complexity defined by thr size of the list i.e. O(n)
+​
+### There is another solution using Bit Manipulation: [video explanation](https://www.youtube.com/watch?v=H1Bvm3VF03Y&t=438s)
+​
