@@ -4,7 +4,7 @@ class Solution(object):
         subset = []
         def dfs(index):
             if index == len(nums):
-                result.append(list(subset))
+                result.append(list(subset)) # Making a copy of the subset
                 return
             
             subset.append(nums[index])
