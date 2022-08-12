@@ -1,15 +1,15 @@
 class Solution(object):
     def subsets(self, nums):
         result = list()
-        subarr = []
+        subset = []
         def dfs(index):
             if index == len(nums):
-                result.append(list(subarr))
+                result.append(list(subset))
                 return
             
-            subarr.append(nums[index])
+            subset.append(nums[index])
             dfs(index+1)
-            subarr.pop()
+            subset.pop()
             dfs(index+1)
             return
         
