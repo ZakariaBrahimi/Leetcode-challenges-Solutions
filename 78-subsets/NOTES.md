@@ -16,4 +16,5 @@ list.copy() # this doesn't work in python, avoid it
 list[:]
 list()
 ```
+[check here](https://stackoverflow.com/questions/37059269/attributeerror-list-object-has-no-attribute-copy) to see the problem with using list.copy()
 * It iterates thorugh all elements. So the time complexity defined by thr size of the list i.e. O(n)
