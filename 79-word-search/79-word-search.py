@@ -10,17 +10,20 @@ class Solution(object):
                 board[row][col] != word[wordIndex] or
                 (row, col) in path):
                 return False
+            
             path.add((row, col))
-            res = (search(row+1, col, wordIndex+1) or
+            result = (search(row+1, col, wordIndex+1) or
                    search(row-1, col, wordIndex+1) or
                    search(row, col+1, wordIndex+1) or
                    search(row, col-1, wordIndex+1))
             path.remove((row, col))
-            return res
+            return result
         
         for row in range(len(board)):
             for col in range(len(board[0])):
                 if search(row, col, 0): # board[row][col] == word[0] and 
                     return True
         return False
+    # Time Complexity: O(n * m * 4^n), 
+    # where 4 is the number of recursive calls (on result variable)
         
