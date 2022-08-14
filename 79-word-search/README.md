@@ -36,6 +36,7 @@
 <p><strong>Follow up:</strong> Could you use search pruning to make your solution faster with a larger <code>board</code>?</p>
 </div>
 
+****
 #### Resources:
 - [Word Search - Backtracking - Leetcode 79 - Python](https://www.youtube.com/watch?v=pfiQ_PS1g8E)
 - [Word Search | Leet code 79 | Theory explained + Python code | July Leet code challenge](https://www.youtube.com/watch?v=ve2ZMiB1INI)
