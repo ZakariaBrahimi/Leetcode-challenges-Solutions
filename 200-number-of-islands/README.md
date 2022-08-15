@@ -35,3 +35,10 @@
 	<li><code>grid[i][j]</code> is <code>'0'</code> or <code>'1'</code>.</li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Amazon Coding Interview Question and Answer - Number of Islands [LeetCode]](https://www.youtube.com/watch?v=O15TviUksZs)
+- [NUMBER OF ISLANDS - Leetcode 200 - Python](https://www.youtube.com/watch?v=pV2kpPD66nE)
+- [Number of Islands Leetcode 200 | Recursion | Depth First Search | Python | Amazon interview question](https://www.youtube.com/watch?v=ZixJexAaOAk)
+- [Python Quicksort Runtime Error: Maximum Recursion Depth Exceeded in cmp](https://stackoverflow.com/questions/25105541/python-quicksort-runtime-error-maximum-recursion-depth-exceeded-in-cmp)
