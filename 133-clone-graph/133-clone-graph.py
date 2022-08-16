@@ -9,7 +9,6 @@ class Node(object):
 class Solution(object):
     def cloneGraph(self, node):
         isCloned = {}
-        
         def dfs(node):
             if node.val in isCloned:
                 return isCloned[node.val]
@@ -18,7 +17,7 @@ class Solution(object):
             isCloned[node.val] = nodeCopy
             for neighbor in node.neighbors:
                 nodeCopy.neighbors.append(dfs(neighbor))
+                
             return nodeCopy
         
         return dfs(node) if node else None
-        
