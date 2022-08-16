@@ -16,8 +16,6 @@ class Solution(object):
             dfs(row-1, col) # top direction
             dfs(row, col+1) # right direction
             dfs(row, col-1) # left direction
-            #max_area[0]      = max(max_area[0], current_area[0])
-            
         
         for row in range(rows):
             for col in range(cols):
