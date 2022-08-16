@@ -14,11 +14,11 @@ class Solution(object):
             if node.val in isCloned:
                 return isCloned[node.val]
             
-            copy = Node(node.val)
-            isCloned[node.val] = copy
+            nodeCopy = Node(node.val)
+            isCloned[node.val] = nodeCopy
             for neighbor in node.neighbors:
-                copy.neighbors.append(dfs(neighbor))
-            return copy
+                nodeCopy.neighbors.append(dfs(neighbor))
+            return nodeCopy
         
         return dfs(node) if node else None
         
