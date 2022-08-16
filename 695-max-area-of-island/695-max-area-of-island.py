@@ -1,6 +1,6 @@
 class Solution(object):
     def maxAreaOfIsland(self, grid):
-        max_area = [0]
+        max_area = 0
         current_area = [0]
         visited  = set()
         rows     = len(grid)
@@ -11,18 +11,19 @@ class Solution(object):
                 return
             visited.add((row, col))
             current_area[0] += 1
-            max_area[0]      = max(max_area[0], current_area[0])
+            
             dfs(row+1, col) # down direction 
             dfs(row-1, col) # top direction
             dfs(row, col+1) # right direction
             dfs(row, col-1) # left direction
-            
+            #max_area[0]      = max(max_area[0], current_area[0])
             
         
         for row in range(rows):
             for col in range(cols):
                 if grid[row][col] == 1:
                     dfs(row, col)
+                max_area      = max(max_area, current_area[0])
                 current_area[0] = 0
         
-        return max_area[0] if grid else 0
+        return max_area if grid else 0
