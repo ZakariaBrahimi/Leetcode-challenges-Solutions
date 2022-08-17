@@ -1,5 +1,5 @@
 class Solution:
-    def pacificAtlantic(self, heights: List[List[int]]) -> List[List[int]]:
+    def pacificAtlantic(self, heights):
         if not heights or not heights[0]: return []
         rows     = len(heights)
         cols     = len(heights[0])
@@ -19,6 +19,9 @@ class Solution:
         
         
         def dfs(row, col, visitedOcean):
+            # base case: visted
+            if (row, col) in visitedOcean:
+                return
             visitedOcean.add((row, col))
             for rowDirection, colDirection in directions:
                 new_row = rowDirection + row
