@@ -28,10 +28,9 @@ class Solution:
             for rowDirection, colDirection in directions:
                 new_row = rowDirection + row
                 new_col = colDirection + col
-                if ( rows > new_row >= 0 and  
-                     cols > new_col >= 0 and 
-                   ( new_row, new_col) not in visitedOcean and
-                     heights[new_row][new_col] >= heights[row][col]):
+                if ( rows > new_row >= 0 and cols > new_col >= 0 and # Out of bounds 
+                   ( new_row, new_col) not in visitedOcean and # not visited before
+                     heights[new_row][new_col] >= heights[row][col]): # next land water can flow to current land
                     dfs(new_row, new_col, visitedOcean)
                 
         for row, col in pacific:  dfs(row, col, pacific_visited)
