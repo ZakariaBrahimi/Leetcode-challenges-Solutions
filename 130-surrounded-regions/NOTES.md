@@ -1,1 +1,1 @@
-​
+* Don't start coding until you make a really clear plan and steps, this is the most important note I have learnt from solving this problem
