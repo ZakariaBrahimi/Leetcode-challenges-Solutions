@@ -19,7 +19,7 @@ class Solution(object):
                 if grid[row][col] == 2:
                     queue.insert(0, (row, col))         
                     
-        while fresh_orange > 0 and queue:
+        while fresh_orange != 0 and queue:
             for _ in range(len(queue)):
                 current_row, current_col = queue.pop()
                 for row_direction, col_direction in directions:
