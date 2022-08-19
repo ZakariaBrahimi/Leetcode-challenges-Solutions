@@ -41,3 +41,8 @@
 	<li><code>grid[i][j]</code> is <code>0</code>, <code>1</code>, or <code>2</code>.</li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Rotting Oranges - Leetcode 994 - Python](https://www.youtube.com/watch?v=y704fEOx0s0)
+- [Rotting Oranges | Directional Arrays & BFS | LeetCode](https://www.youtube.com/watch?v=vsAeM9EGhFo)
