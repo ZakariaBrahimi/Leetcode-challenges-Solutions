@@ -35,4 +35,4 @@ if grid[row][col] == 1:
 return -1
 return minutes
 ```
-* The above approach is mine, it is not correct because I didn't consider BFS as multy sources algorithm for more detials, check video explanation
+* The above approach is mine, it is not correct because I didn't consider BFS as multy sources algorithm for more detials, check [video explanation](https://www.youtube.com/watch?v=y704fEOx0s0)
