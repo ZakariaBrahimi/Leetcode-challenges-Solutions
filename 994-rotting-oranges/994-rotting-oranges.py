@@ -29,8 +29,7 @@ class Solution(object):
                         grid[new_row][new_col] == 1):
                         grid[new_row][new_col] = 2
                         fresh_orange -= 1
-                        queue.insert(0, (new_row, new_col))
-                        
+                        queue.insert(0, (new_row, new_col))            
             minutes += 1
         
         return minutes if fresh_orange == 0 else -1
