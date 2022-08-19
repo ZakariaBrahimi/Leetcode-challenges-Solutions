@@ -20,8 +20,7 @@ class Solution(object):
                     queue.insert(0, (row, col))         
                     
         while fresh_orange > 0 and queue:
-            length = len(queue)
-            for _ in range(length):
+            for _ in range(len(queue)):
                 current_row, current_col = queue.pop()
                 for row_direction, col_direction in directions:
                     new_row = current_row + row_direction
