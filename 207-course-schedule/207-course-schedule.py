@@ -21,7 +21,7 @@ class Solution(object):
             
             hasVisited.add(key)
             for neighbor in hash_map[key]:
-                if dfs(neighbor) == False:
+                if not dfs(neighbor): # not dfs(neighbor) == dfs(neighbor) == False
                     return False
             hasVisited.remove(key)
             hash_map[key] = []
