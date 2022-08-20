@@ -2,29 +2,29 @@ class Solution(object):
     def canFinish(self, numCourses, prerequisites):
         # Test Case:
         #   [[0,1], [0,2], [1,3], [1,4], [3,4]] , numCourses = 5
-        #   hash_map = {0:[1,2], 1:[3,4], 2:[], 3:[4], 4:[]}
+        #   courses_map = {0:[1,2], 1:[3,4], 2:[], 3:[4], 4:[]}
         #   hasVisited = {0, 1, 3, 4}
         
         hasVisited = set()
-        hash_map   = {i:[] for i in range(numCourses)} # {0:[], 1:[], 2:[], 3:[], 4:[]}
-        # Mapping each course to : prereq list
+        courses_map   = {i:[] for i in range(numCourses)} # {0:[], 1:[], 2:[], 3:[], 4:[]}
+        # Mapping each course to : prereq list (creating the graph)
         for course in prerequisites: # prerequisite = 
-            hash_map[course[0]].append(course[1])
+            courses_map[course[0]].append(course[1])
         
         def dfs(course):
             if course in hasVisited: return False
-            if hash_map[course] == []:
+            if courses_map[course] == []:
                 return True
             
             hasVisited.add(course)
-            for neighbor in hash_map[course]:
+            for neighbor in courses_map[course]:
                 if not dfs(neighbor): # not dfs(neighbor) == dfs(neighbor) == False
                     return False
             hasVisited.remove(course)
-            hash_map[course] = []
+            courses_map[course] = []
             return True
         # We should run this loop in case the graph is not fully connected
-        for course in hash_map:
+        for course in courses_map:
             if not dfs(course):
                 return False
             
