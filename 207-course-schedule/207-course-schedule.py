@@ -5,6 +5,10 @@ class Solution(object):
         #   courses_map = {0:[1,2], 1:[3,4], 2:[], 3:[4], 4:[]}
         #   hasVisited = {0, 1, 3, 4}
         
+        # Time Complexity : O(V+E)
+        # Space Complexity: O(V+E)
+        # Where E is the number of edges and V is the number of vertices
+        
         hasVisited = set()
         courses_map   = {i:[] for i in range(numCourses)} # {0:[], 1:[], 2:[], 3:[], 4:[]}
         # Mapping each course to : prereq list (creating the graph)
@@ -21,7 +25,9 @@ class Solution(object):
                 if not dfs(neighbor): # not dfs(neighbor) == dfs(neighbor) == False
                     return False
             hasVisited.remove(course)
-            courses_map[course] = []
+            # Make it empty in case we need to check that this graph has cycle or not, 
+            # without running the same functionallity, we imidiately return True
+            courses_map[course] = [] 
             return True
         # We should run this loop in case the graph is not fully connected
         for course in courses_map:
