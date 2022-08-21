@@ -1,1 +1,1 @@
-​
+* we can solve this problem using the other similair approach on [course schedule 2](https://leetcode.com/problems/course-schedule-ii/) by using two sets, the first one by tracking the current visiting nodes(the current path) and the second for the finished visited nodes.
