@@ -12,4 +12,4 @@ class Solution(object):
             return memo[n]
         
         memoization(n)
-        return memo[n]
+        return memoization(n)
