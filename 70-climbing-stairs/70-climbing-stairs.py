@@ -11,5 +11,4 @@ class Solution(object):
             memo[n] = memoization(n-1) + memoization(n-2)
             return memo[n]
         
-        memoization(n)
         return memoization(n)
