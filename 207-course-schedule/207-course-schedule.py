@@ -10,24 +10,25 @@ class Solution(object):
         # Where E is the number of edges and V is the number of vertices
         
         hasVisited = set()
+        cycle = set()
         courses_map   = {course:[] for course in range(numCourses)} # {0:[], 1:[], 2:[], 3:[], 4:[]}
         # Mapping each course to : prereq list (creating the graph)
         for course in prerequisites: # prerequisite = 
             courses_map[course[0]].append(course[1])
         
         def dfs(course):
-            if course in hasVisited: return False # if it is visited twice, so there is a cycle
-            if courses_map[course] == []: return True # if there is no required cources to finish
+            if course in cycle: return False # if it is visited twice, so there is a cycle
+            if course in hasVisited: return True # if there is no required cources to finish
             
-            hasVisited.add(course)
+            cycle.add(course)
             for neighbor in courses_map[course]:
                 if not dfs(neighbor): # not dfs(neighbor) == dfs(neighbor) == False
                     return False
             # remove if, cuz we're no longer visiting this node(we have already finish visiting this node)
-            hasVisited.remove(course) 
+            cycle.remove(course)
+            hasVisited.add(course)
             # Make it empty in case we need to check that this graph has cycle or not, 
             # without running the same functionallity, we imidiately return True
-            courses_map[course] = [] 
             return True
         # We should run this loop in case the graph is not fully connected
         for course in courses_map:
