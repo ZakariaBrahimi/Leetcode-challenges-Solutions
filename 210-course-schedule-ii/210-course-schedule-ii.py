@@ -1,10 +1,10 @@
 class Solution(object):
     def findOrder(self, numCourses, prerequisites):
-        # First Approach
-        output = []
-        queue = deque()
+        # First Approach: by using the InDegree of each node
+        topological_order = []
         courses_map = {course_number: [] for course_number in range(numCourses)}
-        inDegree = [0]*numCourses
+        inDegree    = [0]*numCourses
+        queue       = deque()
         
         for course, prerequisite in prerequisites:
             courses_map[prerequisite].append(course)
@@ -20,11 +20,11 @@ class Solution(object):
                 inDegree[neighbor] -= 1
                 if inDegree[neighbor] == 0:
                     queue.append(neighbor)
-            output.append(current_node)
-        return output if len(output)==numCourses else []
+            topological_order.append(current_node)
+        return topological_order if len(topological_order)==numCourses else []
         
         
-        # Another approach
+        # Second approach: using DFS and detecting if there is a cycle of not
         """
         output = []
         cycle  = set()
