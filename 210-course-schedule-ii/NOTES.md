@@ -1,1 +1,1 @@
-​
+* we can solve this problem using the other similair approach on [course schedule 1](https://leetcode.com/problems/course-schedule/submissions/) without using two
