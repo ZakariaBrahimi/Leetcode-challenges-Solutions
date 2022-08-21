@@ -1,5 +1,31 @@
 class Solution(object):
     def findOrder(self, numCourses, prerequisites):
+        # First Approach
+        output = []
+        queue = deque()
+        courses_map = {course_number: [] for course_number in range(numCourses)}
+        inDegree = [0]*numCourses
+        
+        for course, prerequisite in prerequisites:
+            courses_map[prerequisite].append(course)
+            inDegree[course] += 1
+        
+        for i in range(numCourses):
+            if inDegree[i] == 0:
+                queue.append(i)
+        
+        while queue:
+            current_node = queue.popleft()
+            for neighbor in courses_map[current_node]:
+                inDegree[neighbor] -= 1
+                if inDegree[neighbor] == 0:
+                    queue.append(neighbor)
+            output.append(current_node)
+        return output if len(output)==numCourses else []
+        
+        
+        # Another approach
+        """
         output = []
         cycle  = set()
         hasVisited  = set()
@@ -29,3 +55,4 @@ class Solution(object):
             if not dfs(course):
                 return []
         return output
+        """
