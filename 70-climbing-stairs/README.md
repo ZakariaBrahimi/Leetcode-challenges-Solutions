@@ -29,3 +29,7 @@
 	<li><code>1 &lt;= n &lt;= 45</code></li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Climbing Stairs - Dynamic Programming - Leetcode 70 - Python](https://www.youtube.com/watch?v=Y0lT9Fck7qI)
