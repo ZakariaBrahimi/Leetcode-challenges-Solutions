@@ -1,5 +1,6 @@
 class Solution(object):
     def climbStairs(self, n):
+        # Using Tabulation(bottom-up) method
         one = 1
         two = 1
         for i in range(2, n+1):
@@ -7,7 +8,8 @@ class Solution(object):
             two = one
             one = temp
         return one
-        
+        # Using Tabulation(bottom-up) method, 
+        # but here the space complexity is O(n)
         '''
         dp = [0]*(n+1)
         dp[0] = 1
@@ -17,7 +19,7 @@ class Solution(object):
         
         return dp[-1]
         '''
-        
+        # Using Memoization(top-down) method
         '''
         steps = []
         memo = {}
