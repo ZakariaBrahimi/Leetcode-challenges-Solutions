@@ -36,3 +36,7 @@ The total cost is 6.
 	<li><code>0 &lt;= cost[i] &lt;= 999</code></li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Min Cost Climbing Stairs - Dynamic Programming - Leetcode 746 - Python](https://www.youtube.com/watch?v=ktmzAZWkEZ0)
