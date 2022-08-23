@@ -1,18 +1,24 @@
 class Solution(object):
     def minCostClimbingStairs(self, cost):
+        # Using top-down (memoization) approach
+        # Time : O(n)
+        # Space: O(n)
         def solve(steps):
             if steps in memo: return memo[steps]
-            if steps == 0: return cost[0]
-            if steps == 1: return cost[1]
+            if steps == 0   : return cost[0]
+            if steps == 1   : return cost[1]
             
             memo[steps] = cost[steps] + min(solve(steps-1), solve(steps-2))
             return memo[steps]
+        
         memo = dict()
         steps = len(cost)
         return min(solve(steps-1), solve(steps-2))
         
         
         # Using bottom-up (tabulation) approach
+        # Time : O(n)
+        # Space: O(1), we only use the given array and modifying it
         """
         cost.append(0) # the cost of setting on the top of the floor is 0
         
