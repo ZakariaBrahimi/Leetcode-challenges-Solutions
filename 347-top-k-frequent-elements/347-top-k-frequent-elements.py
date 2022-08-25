@@ -12,9 +12,5 @@ class Solution(object):
             hashMap[current_key] = -1
             k -= 1
             current_val = -1
-            current_key = -1
         
-        return most_frequent_elements
-            
-            
-        
+        return most_frequent_elements      
