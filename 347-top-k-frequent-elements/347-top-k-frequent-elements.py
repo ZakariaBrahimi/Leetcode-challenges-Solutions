@@ -1,5 +1,8 @@
 class Solution(object):
     def topKFrequent(self, nums, k):
+        # Time Complexity : O(n*k) = O(n), 
+        # Space Complexity: O(k+n),
+        # where n is the length of hashMap, worst case nums array contains only different numbers [1,3,4,9,7,6,5]
         most_frequent_elements = []
         hashMap = Counter(nums)
         current_val = -1
