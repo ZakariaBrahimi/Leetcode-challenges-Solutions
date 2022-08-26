@@ -1,5 +1,8 @@
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
+        # Time  Complexity: O(n2)
+        # Space Complexity: O(n2)
+        
         # Declaring variables
         ROWS = len(board)
         COLS = len(board[0])
@@ -35,6 +38,7 @@ class Solution:
         for i in range(3):
             for j in range(3):
                 subBoxes[(i,j)] = set()
+                
         for row in range(ROWS):
             for col in range(COLS):
                 if board[row][col] == '.':
