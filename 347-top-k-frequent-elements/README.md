@@ -21,3 +21,13 @@
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Your algorithm's time complexity must be better than <code>O(n log n)</code>, where n is the array's size.</p>
 </div>
+
+****
+#### Resources:
+- [Python Dictionary popitem()](https://www.programiz.com/python-programming/methods/dictionary/popitem)
+- [Python Dictionary setdefault()](https://www.programiz.com/python-programming/methods/dictionary/setdefault)
+- [What is bucket sort?](https://www.educative.io/answers/what-is-bucket-sort)
+- [Bucket Sort Algorithm](https://www.javatpoint.com/bucket-sort)
+- [Top K Frequent Elements (LeetCode 347) | Full solution with examples | Interview | Study Algorithms](https://www.youtube.com/watch?v=EBNPu0GgM64)
+- [Top K Frequent Elements | Leetcode #347 | Heap | Hashmap](https://www.youtube.com/watch?v=Wh3A29psE_Y)
+- [Top K Frequent Elements - Bucket Sort - Leetcode 347 - Python](https://www.youtube.com/watch?v=YPTqKIgVk-k)
