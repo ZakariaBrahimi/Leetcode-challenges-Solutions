@@ -29,8 +29,8 @@ class Solution:
         
         # 3. Check the validation of all sub-boxes
         #      a. Creating the 9 sub-boxes map 
-        #      b. iterate through the board and assing True or False in each sub-boxes
-        #           - if one of them False, return False immediately
+        #      b. Iterate through the board
+        #           - If the cell value already in the sub-box -> return False immediately
         subBoxes = {}
         for i in range(3):
             for j in range(3):
