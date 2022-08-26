@@ -1,1 +1,1 @@
-​
+* To make the **code readable and clean**, it's better to **divide the 3 steps into 3 separate functions**, and **return True** if **all of them are returning True**, **otherwise return False**.
