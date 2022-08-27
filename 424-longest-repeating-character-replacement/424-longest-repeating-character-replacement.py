@@ -1,15 +1,13 @@
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
-        # 1. declare atIndex variable and 2 pointers at first char in the given string
         charCounter = {}
         left, right = 0, 0
         window = 0
         result = 0
         
-        # Valid Sub-string: (substring.length) - (number of leteres that repeated the most) <= k
-        # number of leteres that repeated the most: 
+        # Valid Sub-string: (substring.length) - (number of leteres that repeated the most) <= k 
         
-        # 2. iterate through out the strign until right pointer reach the end of the string
+        # 1. iterate through out the string until right pointer reach the end of the string
         while right < len(s):
         # 3. Expand the window by one then shift the right pointer, until we reach the valid substring
             window += 1
