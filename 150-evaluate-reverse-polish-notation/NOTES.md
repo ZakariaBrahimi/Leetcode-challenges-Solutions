@@ -1,1 +1,2 @@
-​
+* The last two submited codes are wrong because I wasn't carfull when I am doing **'-'** and **'/'** oparations, To avoid this, I need the be carfull with the **order of 2 poped items**.
+* Also, on division operation I should **turn the result to integer** (**that means round the value towards zero check** [this](https://stackoverflow.com/questions/19919387/in-python-what-is-a-good-way-to-round-towards-zero-in-integer-division) for more detials)
