@@ -20,7 +20,7 @@ class Solution:
             # if the sub-string is not valid
             else:
                 # Keep shift the left pointer until we find the valid sub-string and than shift the right pointer
-                while not ((len(s[left:right]) - max(charCounter.values())) <= k):
+                while ((len(s[left:right]) - max(charCounter.values())) > k):
                     window -= 1
                     charCounter[s[left]] -= 1
                     left   += 1
