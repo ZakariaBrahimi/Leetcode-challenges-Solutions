@@ -10,7 +10,7 @@ class Solution:
         
         # 1. iterate through out the string until the right pointer reach the end of the string
         while right < len(s):
-        # 2. Expand the window by one then shift the right pointer, until we reach the valid substring
+        # 2. Expand the window by one 
             window += 1
             charCounter[s[right]] = 1 + charCounter.get(s[right], 0) 
             
@@ -19,11 +19,11 @@ class Solution:
                 result = max(result, window)
             # if the sub-string is not valid
             else:
-                # Keep shift the left pointer until we find the valid sub-string and than shift the right pointer
+                # Keep shifting the left pointer until we find the valid sub-string and than shift the right pointer
                 while ((len(s[left:right+1]) - max(charCounter.values())) > k):
                     window -= 1
                     charCounter[s[left]] -= 1
                     left   += 1
-            right  += 1
+            right  += 1 # Shifting the right pointer
         # 3. returning the max length of the same characters
         return result
