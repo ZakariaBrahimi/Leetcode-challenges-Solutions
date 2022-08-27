@@ -13,17 +13,17 @@ class Solution:
         # 2. Expand the window by one then shift the right pointer, until we reach the valid substring
             window += 1
             charCounter[s[right]] = 1 + charCounter.get(s[right], 0) 
-            right  += 1
+            
             # if the sub-string is valid
-            if (len(s[left:right]) - max(charCounter.values())) <= k: 
+            if (len(s[left:right+1]) - max(charCounter.values())) <= k: 
                 result = max(result, window)
             # if the sub-string is not valid
             else:
                 # Keep shift the left pointer until we find the valid sub-string and than shift the right pointer
-                while ((len(s[left:right]) - max(charCounter.values())) > k):
+                while ((len(s[left:right+1]) - max(charCounter.values())) > k):
                     window -= 1
                     charCounter[s[left]] -= 1
                     left   += 1
-        
+            right  += 1
         # 3. returning the max length of the same characters
         return result
