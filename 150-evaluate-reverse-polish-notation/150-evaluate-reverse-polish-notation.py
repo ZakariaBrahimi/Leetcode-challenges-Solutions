@@ -33,7 +33,7 @@ class Solution:
                 right   = stack.pop()
                 left    = stack.pop()
                 newItem = left / right
-                stack.append(int(newItem))
+                stack.append(int(newItem)) # round the value towards zero using int()
         
         # 5. If we reach the end of the given list push the last remaining elemnt from the stack and return it.
         return stack.pop()
