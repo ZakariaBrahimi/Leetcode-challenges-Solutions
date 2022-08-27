@@ -12,29 +12,28 @@ class Solution:
         # 2. Keep pushing to the stack until we reach one of operators
             if item not in operations:
                 stack.append(int(item))
-            else:
         # 3. Poping the last 2 pushed numbers and do the operation
-                if item == '+':
-                    left    = stack.pop()
-                    right   = stack.pop()
-                    newItem = left + right
+            elif item == '+':
+                left    = stack.pop()
+                right   = stack.pop()
+                newItem = left + right
         # 4. Re-pushing the result again
-                    stack.append(newItem)
-                if item == '-':
-                    right   = stack.pop()
-                    left    = stack.pop()
-                    newItem = left - right
-                    stack.append(newItem)
-                if item == '*':
-                    left    = stack.pop()
-                    right   = stack.pop()
-                    newItem = left * right
-                    stack.append(newItem)
-                if item == '/':
-                    right   = stack.pop()
-                    left    = stack.pop()
-                    newItem = left / right
-                    stack.append(int(newItem))
+                stack.append(newItem)
+            elif item == '-':
+                right   = stack.pop()
+                left    = stack.pop()
+                newItem = left - right
+                stack.append(newItem)
+            elif item == '*':
+                left    = stack.pop()
+                right   = stack.pop()
+                newItem = left * right
+                stack.append(newItem)
+            else:
+                right   = stack.pop()
+                left    = stack.pop()
+                newItem = left / right
+                stack.append(int(newItem))
         
         # 5. If we reach the end of the given list push the last remaining elemnt from the stack and return it.
         return stack.pop()
