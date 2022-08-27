@@ -1,5 +1,8 @@
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
+        # Time copmlexity : O(n)
+        # Space copmlexity: O(n)
+        
         # 0. Declaring variables
         stack = []
         operations = {'+', '-', '*', '/'}
@@ -10,7 +13,7 @@ class Solution:
             if item not in operations:
                 stack.append(int(item))
             else:
-        # 3. Popinh the last 2 pushed numbers and do the operation
+        # 3. Poping the last 2 pushed numbers and do the operation
                 if item == '+':
                     left    = stack.pop()
                     right   = stack.pop()
