@@ -22,18 +22,47 @@ class Solution:
         numsSet = {num for num in nums}
         lengest_sequence = 0
         current_sequence = 0
+        hasVisited = set()
         
         for num in nums:
-            if (num - 1) not in numsSet:
+            
+            current = num
+            current_sequence = 1
+            if current in hasVisited:
+                continue
+            hasVisited.add(num)
+            while (current+1) in numsSet:
+                hasVisited.add(current)
+                current_sequence += 1
+                current = current + 1
+                
+            current = num 
+            while (current-1) in numsSet:
+                hasVisited.add(current)
+                current_sequence += 1
+                current = current - 1
+            lengest_sequence = max(lengest_sequence, current_sequence)
+        return lengest_sequence
+    
+    
+    """
+    class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
+        
+        if len(nums) == 0: return 0
+        if len(nums) == 1: return 1
+        numsSet = {num for num in nums}
+        lengest_sequence = 0
+        current_sequence = 0
+        
+        for num in nums:
+            if (num - 1) not in numsSet: # finding the starting point
                 current = num
                 current_sequence = 1
                 while (current+1) in numsSet:
                     current_sequence += 1
                     current = current + 1
                 lengest_sequence = max(lengest_sequence, current_sequence)
-            """current = num 
-            while (current-1) in numsSet:
-                result.append(current)
-                current = current - 1"""
 
         return lengest_sequence
+    """
