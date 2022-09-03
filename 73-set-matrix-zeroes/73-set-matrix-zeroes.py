@@ -7,7 +7,7 @@ class Solution:
         [[1]]
         
         """
-        # Time Complexity : O(n*m)
+        """# Time Complexity : O(n*m)
         # Space Complexity: O(1)
         hasVisited = set()
         ROWS = len(matrix)
@@ -34,4 +34,43 @@ class Solution:
                     hasVisited.add((row, col))
                     setToZeros(row, col)
         
+        return matrix"""
+        
+        # Time Complexity : O(n*m)
+        # Space Complexity: O(1)
+        zeroCells = set()
+        ROWS = len(matrix)
+        COLS = len(matrix[0])
+        
+        def setToZeros(row, col):
+            # row to zeros
+            for r in range(ROWS):
+                matrix[r][col] = 0
+            
+            # col to zeros
+            for c in range(COLS):
+                matrix[row][c] = 0
+        
+        for row in range(ROWS):
+            for col in range(COLS):
+                if matrix[row][col] == 0:
+                    zeroCells.add((row, col))
+        
+        for row, col in zeroCells:
+            setToZeros(row, col)
+        
         return matrix
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
