@@ -25,12 +25,13 @@ class Solution:
         hasVisited = set()
         
         for num in nums:
-            
             current = num
             current_sequence = 1
             if current in hasVisited:
                 continue
-            hasVisited.add(num)
+            # the set is for avoiding iterating other each integer more than 1 time
+            # That means reduce the search space (means reduce the time complexity)
+            hasVisited.add(num) 
             while (current+1) in numsSet:
                 hasVisited.add(current)
                 current_sequence += 1
@@ -44,9 +45,9 @@ class Solution:
             lengest_sequence = max(lengest_sequence, current_sequence)
         return lengest_sequence
     
-    
+    # Another simple approach by finding the starting point of each sequence 
     """
-    class Solution:
+class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         
         if len(nums) == 0: return 0
