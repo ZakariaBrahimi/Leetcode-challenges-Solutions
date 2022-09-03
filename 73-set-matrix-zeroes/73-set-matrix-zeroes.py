@@ -7,6 +7,8 @@ class Solution:
         [[1]]
         
         """
+        # Time Complexity : O(n*m)
+        # Space Complexity: O(1)
         hasVisited = set()
         ROWS = len(matrix)
         COLS = len(matrix[0])
@@ -14,7 +16,7 @@ class Solution:
         def setToZeros(row, col):
             # row to zeros
             for r in range(ROWS):
-                if matrix[r][col] == 0:
+                if matrix[r][col] == 0: # if already zero
                     continue
                 matrix[r][col] = 0
                 hasVisited.add((r, col))
