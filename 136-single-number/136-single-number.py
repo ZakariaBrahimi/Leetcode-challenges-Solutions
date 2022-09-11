@@ -1,21 +1,17 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
+        output = 0
+        
+        for num in nums:
+            output = output ^ num
+            print(output ^ num)
+        return output
+        
+        
+        # It's working Solution, but not Effecient
+        # Time Complexity : O(n) 
+        # Space Complexity: O(1)
         """
-        [4,1,2,1,2]
-        [5123321]
-        {5,1,2,3}
-        
-        1. Initializeing empty hash set
-        
-        2. Loop throught the array
-            -> if nums[i] in set:
-                -> remove nums[i] from the set
-                
-            -> if nums[i] not in set:
-                -> set.add(nums[i])
-        
-        """
-        
         hashSet = set()
         for num in nums:
             if num in hashSet:
@@ -24,3 +20,4 @@ class Solution:
                 hashSet.add(num)
         
         return hashSet.pop()
+        """
