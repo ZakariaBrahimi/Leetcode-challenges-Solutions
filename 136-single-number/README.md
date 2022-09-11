@@ -22,3 +22,8 @@
 	<li>Each element in the array appears twice except for one element which appears only once.</li>
 </ul>
 </div>
+
+***
+#### Resources:
+- [Bit Manipulation with Exclusive OR Operation(XOR)](https://www.youtube.com/watch?v=qMPX1AOa83k)
+- [XOR - The magical bitwise operator](https://hackernoon.com/xor-the-magical-bit-wise-operator-24d3012ed821)
