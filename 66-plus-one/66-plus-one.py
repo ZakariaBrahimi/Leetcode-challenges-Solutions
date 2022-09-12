@@ -1,5 +1,7 @@
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
+        # Time Complexity : O(n)
+        # Space Complexity: O(1)
         i = -1
         s = True
         while s:
@@ -18,9 +20,9 @@ class Solution:
         
         
         """
-        [1,9,9]
-        
-        [9,9,9]
+        Edge Cases:
+            -> [1,9,9]
+            -> [9,9,9]
         
         [1,2,3]
         -> '123' -> 123 -> 123 + 1 = 124 -> '124' -> [1,2,4]
@@ -36,6 +38,7 @@ class Solution:
         5. change the given array in place
         
         """
+        # Iintuitive Solution using Python built-in functions
         """
         toString = ''
         for num in digits:
