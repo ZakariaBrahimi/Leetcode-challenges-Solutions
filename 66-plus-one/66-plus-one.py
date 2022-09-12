@@ -6,17 +6,13 @@ class Solution:
             if i >= -len(digits):
                 if digits[i] == 9:
                     digits[i] = 0
-                    i -= 1
                 else:
                     digits[i] += 1
-                    i -= 1
                     s = False
             else:
                 digits.insert(0, 1)
-                i -= 1
                 s = False
-                
-            
+            i -= 1
         
         return digits
         
