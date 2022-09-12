@@ -1,6 +1,27 @@
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
+        i = -1
+        s = True
+        while s:
+            if i >= -len(digits):
+                if digits[i] == 9:
+                    digits[i] = 0
+                else:
+                    digits[i] += 1
+                    s = False
+            else:
+                digits.insert(0, 1)
+                s = False
+            i -= 1
+        
+        return digits
+        
+        
         """
+        [1,9,9]
+        
+        [9,9,9]
+        
         [1,2,3]
         -> '123' -> 123 -> 123 + 1 = 124 -> '124' -> [1,2,4]
         
@@ -15,7 +36,7 @@ class Solution:
         5. change the given array in place
         
         """
-        
+        """
         toString = ''
         for num in digits:
             toString += str(num)
@@ -26,5 +47,5 @@ class Solution:
             digits.append(int(num_str))
         
         return digits
-        
+        """
         
