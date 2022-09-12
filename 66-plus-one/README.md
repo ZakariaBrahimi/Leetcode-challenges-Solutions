@@ -39,3 +39,7 @@ Thus, the result should be [1,0].
 	<li><code>digits</code> does not contain any leading <code>0</code>'s.</li>
 </ul>
 </div>
+
+****
+#### Resources:
+- [Plus One - Leetcode 66 - Python](https://www.youtube.com/watch?v=jIaA8boiG1s)
