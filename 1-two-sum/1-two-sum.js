@@ -1,8 +1,4 @@
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
- */
+
 var twoSum = function(nums, target) {
     let hashMap = {};
     if (nums.length == 2){ return [0, 1]}
@@ -12,5 +8,6 @@ var twoSum = function(nums, target) {
             return [hashMap[RequiredVal], i];
         }
         hashMap[nums[i]] = i;
+
     }
 };
