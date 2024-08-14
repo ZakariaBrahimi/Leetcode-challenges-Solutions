@@ -1,13 +1,22 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        # for i in range(len(nums)):
+        #     j = i+1
+        #     while j < len(nums):
+        #         if nums[i] + nums[j] == target:
+        #             return [i, j]
+        #         j += 1
+        
+        hashTable = dict() # {nums[i]: index}
         for i in range(len(nums)):
-            j = i+1
-            while j < len(nums):
-                if nums[i] + nums[j] == target:
-                    return [i, j]
-                j += 1
-        
-        
+            if nums[i] not in hashTable:
+                hashTable[nums[i]] = i
+        print(hashTable)
+        for i in range(len(nums)):
+            numberToSearch = target - nums[i]
+            if numberToSearch in hashTable and hashTable[numberToSearch] != i:
+                return [i, hashTable[numberToSearch]]
+
 
         """
         nums = [2,11,8,7], target = 9
