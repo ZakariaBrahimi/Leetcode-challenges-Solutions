@@ -12,13 +12,16 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 |  |
 | ------- |
+| [0242-valid-anagram](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0242-valid-anagram) |
 | [1781-check-if-two-string-arrays-are-equivalent](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
 ## Hash Table
 |  |
 | ------- |
 | [0217-contains-duplicate](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0242-valid-anagram) |
 ## Sorting
 |  |
 | ------- |
 | [0217-contains-duplicate](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0242-valid-anagram) |
 <!---LeetCode Topics End-->
