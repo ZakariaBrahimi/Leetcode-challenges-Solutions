@@ -1,5 +1,6 @@
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        # It can be solved using either a Heap data structure or the Bucket Sort algorithm
 
         # Time Complexity : O(n)
         # Space Complexity: O(n)
