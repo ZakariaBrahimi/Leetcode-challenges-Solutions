@@ -15,14 +15,15 @@ class Solution:
 
         # Backet Sort Algorithm
         # Creating Buckts
-        buckets = [[] for i in range(len(nums)+1)]
+        buckets = [[] for i in range(len(nums) + 1)]
         # Filling backets
         for key, val in hashTable.items():
             buckets[val].append(key)
-        
-        # Getting the k most frequent elements by loopping descending 
+
+        # Getting the k most frequent elements by loopping descending
         result = []
-        for i in range(len(buckets)-1, 0, -1):
+        for i in range(len(buckets) - 1, 0, -1):
             for num in buckets[i]:
                 result.append(num)
-                if len(result) == k: return result
+                if len(result) == k:
+                    return result
