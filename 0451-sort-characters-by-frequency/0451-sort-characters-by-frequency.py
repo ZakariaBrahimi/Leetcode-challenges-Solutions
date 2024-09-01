@@ -3,6 +3,9 @@ import heapq
 
 class Solution:
     def frequencySort(self, s: str) -> str:
+        # Solved Using Heap Sorting Algorithm
+        # Time Complexity : O(n)
+        # Time Complexity : O(n)
         # Create the chars counter
         counter = collections.Counter(s)
         # Convert dictionary to a list of tuples, using negative frequency for max-heap simulation
