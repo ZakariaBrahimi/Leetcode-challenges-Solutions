@@ -8,6 +8,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0001-two-sum) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0217-contains-duplicate](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0217-contains-duplicate) |
 | [0347-top-k-frequent-elements](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0347-top-k-frequent-elements) |
 | [1781-check-if-two-string-arrays-are-equivalent](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
@@ -65,4 +66,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0692-top-k-frequent-words](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0692-top-k-frequent-words) |
+## Two Pointers
+|  |
+| ------- |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+## Binary Search
+|  |
+| ------- |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 <!---LeetCode Topics End-->
