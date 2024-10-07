@@ -16,6 +16,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0020-valid-parentheses) |
 | [0242-valid-anagram](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0242-valid-anagram) |
 | [0451-sort-characters-by-frequency](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0451-sort-characters-by-frequency) |
 | [0692-top-k-frequent-words](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0692-top-k-frequent-words) |
@@ -81,6 +82,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Stack
 |  |
 | ------- |
+| [0020-valid-parentheses](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0020-valid-parentheses) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Simulation
 |  |
