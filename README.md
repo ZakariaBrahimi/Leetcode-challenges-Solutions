@@ -20,6 +20,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0451-sort-characters-by-frequency](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0451-sort-characters-by-frequency) |
 | [0692-top-k-frequent-words](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0692-top-k-frequent-words) |
 | [1781-check-if-two-string-arrays-are-equivalent](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
+| [2800-minimum-string-length-after-removing-substrings](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Hash Table
 |  |
 | ------- |
@@ -77,4 +78,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+## Stack
+|  |
+| ------- |
+| [2800-minimum-string-length-after-removing-substrings](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/2800-minimum-string-length-after-removing-substrings) |
+## Simulation
+|  |
+| ------- |
+| [2800-minimum-string-length-after-removing-substrings](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/2800-minimum-string-length-after-removing-substrings) |
 <!---LeetCode Topics End-->
