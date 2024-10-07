@@ -1,24 +1,13 @@
 class Solution:
     def minLength(self, s: str) -> int:
-        """
-            ABFCACDB
-            sliding widow of length 2 
-            wind1 = "1B" or wind2 = "CD"
-
-            new_string = string
-            looping throight the string where i == 0 and stops when i < len(string) - 1:
-                if string[i] + string[i+1] == "AB" or "CD":
-                    new_string = string[i+2:]
-                else: i += 1
-
-            return len(new_string) 
-        """
+        # Time  Complexity: O(n)
+        # Space Complexity: O(n), in worst case, there is no AB and CD
         stack = []
-        for char in s:
-            # if stack is empty
+        for char in s: # O(n), n is the length of string ns
+            # if stack is empty and there are no AB or CD
             if not stack or not ((stack[-1] + char == 'AB') or (stack[-1] + char == 'CD')):
-                stack.append(char)
+                stack.append(char) # O(1)
             else:
-                stack.pop()
+                stack.pop() # O(1)
 
         return len(stack)
