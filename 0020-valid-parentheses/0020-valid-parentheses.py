@@ -28,7 +28,7 @@ class Solution:
         for parenthes in s:
             # If it's a closing parenthesis
             if parenthes not in parenthesMap:
-                # Pop the stack and check if the top matches the corresponding opening parenthesis
+                # Pop the stack and check if the top matches the corresponding closing parenthesis
                 if stack and stack[-1] == parenthes:
                     stack.pop()
                 else:
