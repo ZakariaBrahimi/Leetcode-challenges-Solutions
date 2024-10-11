@@ -4,8 +4,6 @@ class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
         # Time  Complexity: O(n), n is the length of tokens array
         # Space Complexity: O(1)
-        if len(tokens) == 1:
-            return int(tokens[0])
         
         stack = []
         operations = {
