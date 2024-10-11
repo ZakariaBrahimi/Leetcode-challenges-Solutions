@@ -2,25 +2,34 @@ import operator
 
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
-        if len(tokens) == 1: return int(tokens[0])
+        # Time  Complexity: O(n), n is the length of tokens array
+        # Space Complexity: O(1)
+        if len(tokens) == 1:
+            return int(tokens[0])
+        
         stack = []
-        # operations = {'*': *, '+': +, '-': -, '/': /}
         operations = {
             '*': operator.mul,  # Multiplication
             '+': operator.add,  # Addition
             '-': operator.sub,  # Subtraction
             '/': operator.truediv  # Division (true division)
         }
-        operation_result = 0
+
         for token in tokens:
-            # if token == operation --> pop twice
-            if token in operations.keys():
+            # If token is an operator, pop two operands and apply the operation
+            if token in operations:
                 second_integer = int(stack.pop())
-                first_integer  = int(stack.pop())
-                operation_result = int(operations[token](first_integer, second_integer))
+                first_integer = int(stack.pop())
+                
+                # Perform the operation and truncate towards zero for division
+                if token == '/':
+                    operation_result = int(first_integer / second_integer)
+                else:
+                    operation_result = operations[token](first_integer, second_integer)
+                
                 stack.append(operation_result)
-            # if token == integer   --> append to stack
             else:
+                # If token is a number, push it to the stack
                 stack.append(int(token))
-        print(operation_result)
-        return operation_result
+
+        return stack[0]  # The result will be the only item left in the stack
