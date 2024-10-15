@@ -14,6 +14,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0217-contains-duplicate](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0217-contains-duplicate) |
 | [0347-top-k-frequent-elements](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0347-top-k-frequent-elements) |
 | [0496-next-greater-element-i](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0496-next-greater-element-i) |
+| [0739-daily-temperatures](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0739-daily-temperatures) |
 | [1781-check-if-two-string-arrays-are-equivalent](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/1781-check-if-two-string-arrays-are-equivalent) |
 ## String
 |  |
@@ -89,6 +90,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0150-evaluate-reverse-polish-notation](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0155-min-stack) |
 | [0496-next-greater-element-i](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0496-next-greater-element-i) |
+| [0739-daily-temperatures](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0739-daily-temperatures) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Simulation
 |  |
@@ -106,4 +108,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0496-next-greater-element-i](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0496-next-greater-element-i) |
+| [0739-daily-temperatures](https://github.com/ZakariaBrahimi/Leetcode-challenges-Solutions/tree/master/0739-daily-temperatures) |
 <!---LeetCode Topics End-->
