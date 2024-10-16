@@ -1,5 +1,6 @@
 class Solution:
     def nextGreaterElements(self, nums: List[int]) -> List[int]:
+        # Solved Using: Monotonic Stack Data Structure
         # Time  Complexity: O(n)
         # Space Complexity: O(n)
 
