@@ -13,7 +13,7 @@ class Solution:
                     top_val, index = stack.pop()
                     result[index] = current
 
-                stack.append([current, i])
+                else: stack.append([current, i])
 
             for i in range(len(nums)):
                 current = nums[i]
